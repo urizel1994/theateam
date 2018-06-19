@@ -1,0 +1,52 @@
+.header {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	background-color: floralwhite;
+
+
+	border: 1px solid #E5E5E5;
+}
+
+.h {
+	padding: 3px;
+	margin-left: 13px;
+}
+
+.lit {
+	height: 16px;
+	margin: -1.4px;
+}
+
+input {
+	margin-left: 35px;
+	border-radius: 3px;
+	width: 300px;
+	border: 0.1px solid #E5E5E5;
+	border-top-color: white;
+	border-left-color: white;
+	border-right-color: white;
+	padding: 0px 8px;
+
+
+}
+
+#magnifier {
+	background: #1C8EED;
+	border-radius: 3.5px;
+	width: 50px;
+}
+
+#down {
+	background-color: white;
+	border: none;
+	margin-left: 5px;
+}
+
+.menu > a {
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	color: black;
+	font-size: 12px;
+	margin-left: 11px;
+}
