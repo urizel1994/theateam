@@ -1,0 +1,71 @@
+/* FONTS */
+@font-face {
+	font-family: 'RobotoRegular';
+	src: url('fonts/RobotoRegular/Roboto-Regular.eot');
+	src: url('fonts/RobotoRegular/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/RobotoRegular/Roboto-Regular.woff') format('woff'),
+		 url('fonts/RobotoRegular/Roboto-Regular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'RobotoBold';
+	src: url('fonts/RobotoBold/Roboto-Bold.eot');
+	src: url('fonts/RobotoBold/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/RobotoBold/Roboto-Bold.woff') format('woff'),
+		 url('fonts/RobotoBold/Roboto-Bold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+
+/* END FONTS */
+
+/* BODY STYLES */
+h1, h2, .btn{
+  font-family: RobotoBold;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+/* NAVBAR STYLES */
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 16px 10px 31px;
+}
+
+#logo-search{
+  /* position: absolute; */
+width: 437px;
+height: 30px;
+/* left: 402px; */
+top: 10px;
+
+background: #FFFFFF;
+box-shadow: 0px 9px 27px rgba(0, 0, 0, 0.05);
+border-radius: 3px;
+}
+
+/* LOGO */
+
+/* MAIN STYLES */
+.painting-main{
+  display: flex;
+}
+
+
+/* CAROUSEL DEPENDENCIES */
+.painting-carousel {
+  width: 647px;
+  height: 420px;
+}
+
+.owl-item img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
