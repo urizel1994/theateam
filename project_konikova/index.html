@@ -15,7 +15,9 @@
   <title>RAMMKA</title>
 </head>
 <body>
+
   <!-- NAVBAR -->
+  <div class="container">
     <div class="container-nav">
       <div class="nav-logo">
         <img src="img/logo/Vector.png" alt="R" id="nav-logo-letter-r">
@@ -25,98 +27,108 @@
         <img src="img/logo/Vector (4).png" alt="K" id="nav-logo-letter-k">
         <img src="img/logo/Vector (3).png" alt="А" id="nav-logo-letter-a-2">
       </div>
-      <input type="text" id="logo-search" placeholder="Поиск">
-      <div class="nav-links">
-        <a href="#">Каталог</a>
-        <a href="#">Художники</a>
-        <a href="#">О проекте</a>
+      <div class="navbar-search">
+        <input type="text" id="search-input" placeholder="Поиск"></img></a><i class="fas fa-search"></i><!-- <img src="img/search_icon.png" alt="Поиск"> -->
+        <a href="#" class="search-more"><img src="img/navbar/arrow-down.png" alt="Ещё" ></a>
+      </div>
+      <div class="nav-links link">
+        <a href="#" class="nav-links-item">Каталог</a>
+        <a href="#" class="nav-links-item">Художники</a>
+        <a href="#" class="nav-links-item">О проекте</a>
       </div>
       <div class="nav-btn">
-        <a href="#" id="add-btn"></a>
-        <a href="#" id="menu-btn"></a>
-        <a href="#" id="case-btn"></a>
-        <a href="#" id="profile-btn"></a>
+        <a href="#" id="add-btn"><img src="img/navbar/add-btn.png" alt="Добавить"></a>
+        <a href="#" id="menu-btn"><img src="img/navbar/menu-btn.png" alt="Меню"></a>
+        <a href="#" id="case-btn"><img src="img/navbar/case-btn.png" alt="Покупки"></a>
+        <a href="#" id="profile-btn"><img src="img/navbar/profile-btn.png" alt=""></a>
       </div>      
     </div>
   <!-- END NAVBAR -->
 
   <!-- MAIN -->
-    <!-- PAINTING INFO -->
-    <div class="painting-main">
+    <div class="container-main">
+      <!-- PAINTING INFO -->
+      <div class="link-top link">
+          <a href="#" alt="Назад"><img src="img/main/arrow-left.png" >Вернуться ко всем картинам</a>
+        </div>
+      <div class="painting-main">
+        <div class="painting-full">
+          <div class="painting-carousel-full">
+            <div class="painting-carousel">
+              <div class="owl-item">
+                <img src="img/54b68e50b96943f5cae0a93bd0820307.jpg" alt="Демон сидящий-оригинал">
+              </div>
+              <div class="owl-item">
+                <img src="img/54b68e50b96943f5cae0a93bd0820307.jpg" alt="Демон сидящий-мобил">
+              </div>
+              <div class="owl-item">
+                <img src="img/de457c3b00c383d51379026d2fd6d43f.jpg" alt="Демон сидящий-интерьер">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-buttons">
+            <div class="btn carousel-btn">Оригинал</div>
+            <div class="btn carousel-btn">На устройствах</div>
+            <div class="btn carousel-btn">В интерьере</div>
+          </div>
+        </div>
 
-      <div class="painting-full">
-        <div class="painting-carousel">
-          <div class="owl-item">
-            <img src="img/54b68e50b96943f5cae0a93bd0820307.jpg" alt="Демон сидящий-оригинал">
+        <div class="painting-description">
+          <div class="painting-name">
+            <h1>Демон сидящий</h1>
           </div>
-          <div class="owl-item">
-            <img src="img/54b68e50b96943f5cae0a93bd0820307.jpg" alt="Демон сидящий-мобил">
+          <div class="painting-canvas">
+            <span class="painting-artist">Автор: Николай Воскресенский</span>
+            <h4 class="painting-char">Ширина: 30 см. х Длина: 40 см. <br> Материалы: Холст, Масло.</h4>
           </div>
-          <div class="owl-item">
-            <img src="img/de457c3b00c383d51379026d2fd6d43f.jpg" alt="Демон сидящий-интерьер">
+          <div class="buyer-info">
+            <div class="buyer-price">300 000 руб.</div>
+            <button class="btn buyer-btn">Купить оригинал</button>  
+          </div>
+          <div class="copy-info">
+            <span class="copy-size">Размер электронной копии: <br>5458 х 3639 пикселей</span>
+            <button class="btn copy-dnlw-btn">Скачать копию</button>
+          </div>
+          <div class="collection-info">
+            <div class="collection-added-times">
+              <span>Добавлена 5 раз</span>
+            </div>
+            <button class="btn collection-add">Добавить в коллекцию</button>
           </div>
         </div>
-        <div class="carousel-buttons">
-          <div class="btn carousel-btn">Оригинал</div>
-          <div class="btn carousel-btn">На устройствах</div>
-          <div class="btn carousel-btn">В интерьере</div>
-        </div>
-      </div>
-
-      <div class="painting-description">
-        <div class="painting-name">
-          <h1>Демон сидящий</h1>
-        </div>
-        <div class="painting-canvas">
-          <span class="painting-artist">Автор: Николай Воскресенский</span>
-          <p class="painting-char">Ширина: 30 см. х Длина: 40 см. <br> Материалы: Холст, Масло.</p>
-        </div>
-        <div class="buyer-info">
-          <div class="buyer-price">300 000 руб.</div>
-          <button class="btn buyer-btn">Купить оригинал</button>  
-        </div>
-        <div class="copy-info">
-          <span class="copy-size">Размер электронной копии: <br>5458 х 3639 пикселей</span>
-          <button class="btn copy-dnlw-btn">Скачать копию</button>
-        </div>
-        <div class="collection-info">
-          <div class="collection-added-times">
-            <span>Добавлена 5 раз</span>
-          </div>
-          <button class="btn collection-add">Добавить в коллекцию</button>
-        </div>
-      </div>
-    </div>  
-    <div class="social-info">
-      <span class="views-total">999 просмотров</span>
-      <a href="#" class="like-btn"></a>
-      <a href="#" class="dislike-btn"></a>
-      <a href="#" class="share-btn"></a>
-    </div>
-    <div class="painting-info">
-      <div class="painting-owner">
-        <h2>Владелец</h2>
-        <span>Бадер ибн-Абдулла ибн Мохаммед ибн Фархан Аль-Сауд</span>
-      </div>
-      <div class="painting-date">
-        <h2>Год создания</h2>
-        <span>1990</span>
-      </div>
-    </div>
-    <!-- END PAINTING DESCRIPTION -->
-
-    <!-- SIMILAR PAINTINGS -->
-    <div class="paintings-similar">
-      <h1>Похожие картины</h1>
-      <div class="tag-nest">
-        <a href="#">Озеро</a>
-        <a href="#">Лес</a>
-        <a href="#">Лес</a>
-        <a href="#">Озеро</a>
-        <a href="#">Лес</a>
       </div>  
+      <div class="social-info">
+        <span class="views-total">999 просмотров</span>
+        <a href="#" class="like-btn"></a>
+        <a href="#" class="dislike-btn"></a>
+        <a href="#" class="share-btn"></a>
+      </div>
+      <div class="painting-info">
+        <div class="painting-owner">
+          <h2>Владелец</h2>
+          <span>Бадер ибн-Абдулла ибн Мохаммед ибн Фархан Аль-Сауд</span>
+        </div>
+        <div class="painting-date">
+          <h2>Год создания</h2>
+          <span>1990</span>
+        </div>
+      </div>
+      <!-- END PAINTING DESCRIPTION -->
+
+      <!-- SIMILAR PAINTINGS -->
+      <div class="paintings-similar">
+        <h1>Похожие картины</h1>
+        <div class="tag-nest">
+          <a href="#">Озеро</a>
+          <a href="#">Лес</a>
+          <a href="#">Лес</a>
+          <a href="#">Озеро</a>
+          <a href="#">Лес</a>
+        </div>  
+      </div>
     </div>
     <!-- END SIMILAR PAINTINGS -->
+  </div>
   <!-- END MAIN -->
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
