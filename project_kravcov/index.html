@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="libs/normalize.css">
+  <link rel="stylesheet" href="libs/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>RAMMKA</title>
+</head>
+<body>
+	<!-- Header begin -->
+	<header class="header">
+		<div class="container-fluid">
+			<div class="container">
+				<div class="logo">
+					<img src="img/logo.svg" onerror="this.onerror=null; this.src='img/logo.png'">
+				</div>
+				<div class="block_search">
+					<div class="search">
+						<input type="text" placeholder="Поиск">
+						<button>
+							<!-- <img src="img/lupa.png" alt="search "> -->
+							<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect width="1.60447" height="6.36851" rx="0.802235" transform="matrix(0.725155 -0.688585 0.695743 0.718291 6.40527 7.42578)" fill="white"/>
+								<ellipse cx="4.6186" cy="4.57299" rx="4.6186" ry="4.57299" transform="translate(-0.000488281)" fill="white"/>
+								<ellipse cx="3.84884" cy="3.81082" rx="3.84884" ry="3.81082" transform="translate(0.769287 0.761719)" fill="#627FC5"/>
+							</svg>
+			
+						</button>
+					</div>
+				</div>
+				<a href="#" class="angle"></a>
+				<div class="menu">
+					<ul>
+						<li><a href="#">Каталог</a></li>
+						<li><a href="#">Художники</a></li>
+						<li><a href="#">О проекте</a></li>
+					</ul>
+				</div>
+				<div class="buttons">
+					<a href="#" class="btn-plus"><span></span></a>
+					<a href="#" class="btn-burger"><span></span></a>
+					<a href="#" class="btn-chest">
+						<img src="img/chest.svg" onerror="this.onerror=null; this.src='img/chest.png'">
+					</a>
+					<a href="#" class="btn-profile">
+						<img src="img/profile.svg" onerror="this.onerror=null; this.src='img/profile.png'">
+						<span class="notification"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header end -->
+	<!-- Block picture begin -->
+	<div class="container block-picture">
+		<div class="left-side">
+			<a href="#" class="back-to-pictures">Вернутся ко всем картинам</a>
+			<div class="picture">
+				<div id="block-for-slider">
+			        <div id="viewport">
+			            <ul id="slidewrapper">
+			                <li class="slide"><img src="img/orig_demon.jpg" alt="1" class="slide-img"></li>
+			                <li class="slide"><img src="img/devices_demon.jpg" alt="2" class="slide-img"></li>
+			                <li class="slide"><img src="img/int_demon.png" alt="3" class="slide-img"></li>
+			            </ul>
+			            <div id="prev-next-btns">
+			                <div id="prev-btn"><span></span></div>
+			                <div id="next-btn"><span></span></div>
+            			</div>
+
+            			<ul id="nav-btns">
+			                <li class="slide-nav-btn">Оригинал</li>
+			                <li class="slide-nav-btn">На устройствах</li>
+			                <li class="slide-nav-btn">В интерьере</li>
+			            </ul>
+			        </div>
+			    </div>
+			</div>
+			<div class="under-slider">
+		    	<div class="views">
+		    			<span>999</span> просмотров		    		
+		    	</div>
+		    	<div class="likes">
+		    		<div class="like"><a href="#"><img src="img/like.svg" onerror="this.onerror=null; this.src='img/like.png'"><span>1</span></a></div>
+		    		<div class="dislike"><a href="#"><img src="img/dislike.svg" onerror="this.onerror=null; this.src='img/dislike.png'"><span>0</span></a></div>
+		    		<div class="share"><a href="#"><img src="img/share.svg" onerror="this.onerror=null; this.src='img/share.png'"><span>Поделиться</span></a></div>
+		    	</div>		    	
+			</div>
+			<div class="description-picture">
+				<div class="date">Опубликовано 19.04.2018</div>
+			</div>
+		</div>
+		<div class="buy-picture"></div>
+	</div>
+	<!-- Block picture end -->
+	<script src="libs/jquery-3.3.1.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
