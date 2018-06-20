@@ -2,10 +2,10 @@
 	display: flex;
 	flex-direction: row;
 	width: 100%;
-	background-color: floralwhite;
+	background-color: white;
 
 
-	border: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
 }
 
 .h {
@@ -34,13 +34,15 @@ input {
 #magnifier {
 	background: #1C8EED;
 	border-radius: 3.5px;
-	width: 50px;
+	width: 51px;
+	height: 24px;
 }
 
 #down {
 	background-color: white;
 	border: none;
 	margin-left: 5px;
+	margin-bottom: 8px;
 }
 
 .menu > a {
@@ -50,3 +52,80 @@ input {
 	font-size: 12px;
 	margin-left: 11px;
 }
+
+#plus {
+	background-color: white;
+	border: none;
+	margin-left: 30px;
+
+}
+
+#nvbr {
+	border: none;
+	margin-left: 22px;
+	background-color: white
+}
+
+#portfolio {
+	background-color: white;
+	border: none;
+}
+
+#userpic {
+	background-color: white;
+	border: none;
+
+}
+
+.body {
+	display: flex;
+	flex-direction: row
+}
+
+#rtrn {
+	margin-left: 25px;
+	margin-top: 15px;
+}
+
+#rtrn > a {
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	color: #484848;
+	font-size: 10px;
+}
+
+.gallaria > img {
+	margin-top: 50px;
+	margin-left: -150px;
+}
+
+#looks,
+#pubdate {
+	margin-left: -150px;
+	font-family: 'Roboto', sans-serif;
+	color: #828282;
+	font-size: 15px;
+	margin-top: 5px;
+
+}
+
+#owner > h3 {
+	margin-left: -150px;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+#nameyear {
+	margin-left: -150px;
+	font-family: 'Roboto', sans-serif;
+	color: #A1A1A1;
+}
+
+.likeshare {
+	margin-top: 478px;
+	margin-left: -170px;
+	font-family: 'Roboto', sans-serif;
+	color: #A1A1A1;
+
+}
+
