@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css">
 	<link rel="stylesheet" href="libs/owl-carousel/owl.theme.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="libs/bootstrap 4.1.1/css/bootstrap-grid.css">
   <link rel="stylesheet" href="https://yarnpkg.com/en/package/normalize.css">
   <link rel="stylesheet" href="media.css">
   <link rel="stylesheet" href="style.css">
@@ -20,16 +20,16 @@
   <div class="container">
     <div class="container-nav">
       <div class="nav-logo">
-        <img src="img/logo/Vector.png" alt="R" id="nav-logo-letter-r">
-        <img src="img/logo/Vector (3).png" alt="А" id="nav-logo-letter-a">
-        <img src="img/logo/Vector (2).png" alt="M" id="nav-logo-letter-m">
-        <img src="img/logo/Vector (2).png" alt="M" id="nav-logo-letter-m-2">
-        <img src="img/logo/Vector (4).png" alt="K" id="nav-logo-letter-k">
-        <img src="img/logo/Vector (3).png" alt="А" id="nav-logo-letter-a-2">
+        <img src="img/logo/r.svg" alt="R" id="nav-logo-letter-r">
+        <img src="img/logo/a.svg" alt="А" id="nav-logo-letter-a">
+        <img src="img/logo/m.svg" alt="M" id="nav-logo-letter-m">
+        <img src="img/logo/m.svg" alt="M" id="nav-logo-letter-m-2">
+        <img src="img/logo/k.svg" alt="K" id="nav-logo-letter-k">
+        <img src="img/logo/a.svg" alt="А" id="nav-logo-letter-a-2">
       </div>
       <div class="navbar-search">
         <input type="text" id="search-input" placeholder="Поиск"></img></a><i class="fas fa-search"></i><!-- <img src="img/search_icon.png" alt="Поиск"> -->
-        <a href="#" class="search-more"><img src="img/navbar/arrow-down.png" alt="Ещё" ></a>
+        <a href="#" class="search-more"><img src="img/navbar/arrow-down.svg" alt="Ещё" ></a>
       </div>
       <div class="nav-links link">
         <a href="#" class="nav-links-item">Каталог</a>
@@ -37,10 +37,10 @@
         <a href="#" class="nav-links-item">О проекте</a>
       </div>
       <div class="nav-btn">
-        <a href="#" id="add-btn"><img src="img/navbar/add-btn.png" alt="Добавить"></a>
-        <a href="#" id="menu-btn"><img src="img/navbar/menu-btn.png" alt="Меню"></a>
-        <a href="#" id="case-btn"><img src="img/navbar/case-btn.png" alt="Покупки"></a>
-        <a href="#" id="profile-btn"><img src="img/navbar/profile-btn.png" alt=""></a>
+        <a href="#" id="add-btn"><img src="img/navbar/add-btn.svg" alt="Добавить"></a>
+        <a href="#" id="menu-btn"><img src="img/navbar/menu-btn.svg" alt="Меню"></a>
+        <a href="#" id="case-btn"><img src="img/navbar/case-btn.svg" alt="Покупки"></a>
+        <a href="#" id="profile-btn"><img src="img/navbar/profile-btn.svg" alt=""></a>
       </div>      
     </div>
   <!-- END NAVBAR -->
@@ -48,28 +48,31 @@
   <!-- MAIN -->
     <div class="container-main">
       <!-- PAINTING INFO -->
-      <div class="link-top link">
-          <a href="#" alt="Назад"><img src="img/main/arrow-left.png" >Вернуться ко всем картинам</a>
+      <div class="link-back link">
+          <a href="#" alt="Назад"><img src="img/main/arrow-left.svg" >Вернуться ко всем картинам</a>
         </div>
       <div class="painting-main">
         <div class="painting-full">
           <div class="painting-carousel-full">
             <div class="painting-carousel">
               <div class="owl-item">
-                <img src="img/54b68e50b96943f5cae0a93bd0820307.jpg" alt="Демон сидящий-оригинал">
+                <img src="img/carousel/54b68e50b96943f5cae0a93bd0820307.jpg" alt="Демон сидящий-оригинал">
               </div>
               <div class="owl-item">
-                <img src="img/54b68e50b96943f5cae0a93bd0820307.jpg" alt="Демон сидящий-мобил">
+                <img src="img/carousel/54b68e50b96943f5cae0a93bd0820307.jpg" alt="Демон сидящий-устройство">
               </div>
               <div class="owl-item">
-                <img src="img/de457c3b00c383d51379026d2fd6d43f.jpg" alt="Демон сидящий-интерьер">
+                <img src="img/carousel/de457c3b00c383d51379026d2fd6d43f.jpg" alt="Демон сидящий-интерьер">
               </div>
             </div>
           </div>
           <div class="carousel-buttons">
-            <div class="btn carousel-btn">Оригинал</div>
-            <div class="btn carousel-btn">На устройствах</div>
-            <div class="btn carousel-btn">В интерьере</div>
+            <button class="btn carousel-btn">Оригинал</button>
+            <button class="btn carousel-btn">На устройствах</button>
+            <button class="btn carousel-btn">В интерьере</>
+          </div>
+          <div class="carousel-fullscreen-btn">
+            <button><img src="img/main/full-screen.svg" alt="На весь экран"></button>
           </div>
         </div>
 
@@ -77,32 +80,40 @@
           <div class="painting-name">
             <h1>Демон сидящий</h1>
           </div>
-          <div class="painting-canvas">
+          <div class="painting-char">
             <span class="painting-artist">Автор: Николай Воскресенский</span>
-            <h4 class="painting-char">Ширина: 30 см. х Длина: 40 см. <br> Материалы: Холст, Масло.</h4>
+            <h4 class="painting-canvas">Ширина: 30 см. х Длина: 40 см. <br> Материалы: Холст, Масло.</h4>
           </div>
-          <div class="buyer-info">
-            <div class="buyer-price">300 000 руб.</div>
-            <button class="btn buyer-btn">Купить оригинал</button>  
-          </div>
-          <div class="copy-info">
-            <span class="copy-size">Размер электронной копии: <br>5458 х 3639 пикселей</span>
-            <button class="btn copy-dnlw-btn">Скачать копию</button>
-          </div>
-          <div class="collection-info">
-            <div class="collection-added-times">
-              <span>Добавлена 5 раз</span>
+
+          <div class="user-options">
+            <div class="buyer-info">
+              <span class="buyer-price">300 000<span class="buyer-currency">руб.</span></span>
+              <button class="btn buyer-btn">Купить оригинал</button>  
             </div>
-            <button class="btn collection-add">Добавить в коллекцию</button>
+            <div class="copy-info">
+              <span class="copy-size">Размер электронной копии: <br>5458 х 3639 пикселей</span>
+              <button class="btn copy-dnlw-btn">Скачать копию</button>
+            </div>
+            <div class="collection-info">
+              <div class="collection-added-times"><img src="img/main/stock.svg" alt="">
+                <span>Добавлена 5 раз</span>
+              </div>
+              <button class="btn collection-add-btn">Добавить в коллекцию</button>
+            </div>
           </div>
         </div>
-      </div>  
+      </div> 
+
       <div class="social-info">
         <span class="views-total">999 просмотров</span>
-        <a href="#" class="like-btn"></a>
-        <a href="#" class="dislike-btn"></a>
-        <a href="#" class="share-btn"></a>
+        <div class="social-btn">
+          <a href="#" class="like-btn"><img src="img/main/like.svg" alt=""><span>1</span></a>
+          <a href="#" class="dislike-btn"><img src="img/main/dislike.svg" alt=""><span>0</span></a>
+          <a href="#" class="share-btn"><img src="img/main/redo.svg" alt="">Поделиться</a>
+        </div>
+        <br>
       </div>
+      <span class="published-in">Опубликовано: 19.04.2018</span>
       <div class="painting-info">
         <div class="painting-owner">
           <h2>Владелец</h2>
@@ -117,13 +128,23 @@
 
       <!-- SIMILAR PAINTINGS -->
       <div class="paintings-similar">
-        <h1>Похожие картины</h1>
+        <h2>Похожие картины</h2>
         <div class="tag-nest">
-          <a href="#">Озеро</a>
-          <a href="#">Лес</a>
-          <a href="#">Лес</a>
-          <a href="#">Озеро</a>
-          <a href="#">Лес</a>
+          <button class="tag-nest-single">Озеро<img src="img/main/cross.svg" alt="Отменить"></button>
+          <button class="tag-nest-single">Лес<img src="img/main/cross.svg" alt="Отменить"></button>
+          <button class="tag-nest-single">Лес<img src="img/main/cross.svg" alt="Отменить"></button>
+          <button class="tag-nest-single">Озеро<img src="img/main/cross.svg" alt="Отменить"></button>
+          <button class="tag-nest-single">Лес<img src="img/main/cross.svg" alt="Отменить"></button>
+        </div>
+        <div class="paintings-similar-results">
+          <img src="img/similar/4f3f28e6cc91531ad4635f37c928422a.jpg" alt="">
+          <img src="img/similar/811875e109e50a55db82afaf56413ea8.jpg" alt="">
+          <img src="img/similar/98c2a293d8b936ec78db7531a3f999c9.jpg" alt="">
+          <img src="img/similar/9d54b5a2665b664c1e9f9e16136e428e.jpg" alt="">
+          <img src="img/similar/ae813dba0af00be581068501d2e97fbc.jpg" alt="">
+          <img src="img/similar/d92f2c3458b7b61b9ebd0dc8ccbfc167.jpg" alt="">
+          <img src="img/similar/e92c6cadff5229a250469a5199b46b68.jpg" alt="">
+          <img src="img/similar/f4500f841c8c540634fb7b73e24bbf87.jpg" alt="">
         </div>  
       </div>
     </div>
@@ -135,6 +156,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 <script src="libs/owl-carousel/owl.carousel.min.js"></script>
+<script src="libs/Wookmark-jQuery-master/wookmark.min.js"></script>
 <script src="app.js"></script>
 </body>
 
