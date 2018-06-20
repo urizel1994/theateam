@@ -2,9 +2,11 @@
 body
 	font-family: Roboto
 	font-style: normal
+	background-color: #f7f7f7
 	a
 		text-decoration: none
 		color: #494949
+
 ///// Header begin \\\\\\
 header
 	background-color: #f7f7f7
@@ -14,6 +16,7 @@ header
 	.container
 		display: flex
 		align-items: center
+		justify-content: center
 		.logo
 			padding: 15px 30px
 		.block_search
@@ -45,13 +48,19 @@ header
 
 		.angle
 			display: block
+			position: relative
+		.angle::before
+			content: ''
+			display: block
+			position: absolute
+			top: -8px
+			left: 8px
 			width: 12px
 			height: 12px
-			margin-left: 15px
-			margin-top: -6px
 			border-right: 1.5px solid #BDBDBD
 			border-bottom: 1.5px solid #BDBDBD
 			transform: rotate(45deg)
+
 		.menu
 			ul
 				padding: 0
@@ -149,9 +158,14 @@ header
 					border-radius: 50%
 
 ///// Header end \\\\\\
+
+
 ///// Block picture begin \\\\\\\\
 .block-picture
+	display: flex
 	.left-side
+		width: 650px
+		margin: 0
 		.back-to-pictures
 			font-size: 14px
 			color: #484848
@@ -176,7 +190,6 @@ header
 				width: 650px
 				height: 420px
 				#viewport
-					width: 100%
 					display: table
 					position: relative
 					overflow: hidden
@@ -255,6 +268,8 @@ header
 							font-size: 14px
 							background-color: rgba(0,0,0, .2)
 							margin: 3px
+						.active
+							background-color: rgba(0,0,0, .6)
 						.slide-nav-btn:hover
 							cursor: pointer
 							background-color: rgba(0,0,0, .6)
@@ -292,3 +307,291 @@ header
 				color: #A1A1A1
 				font-size: 14px
 				margin-top: 7px
+			h2
+				font-size: 26px
+				font-weight: bold
+				padding: 0
+				margin: 0
+				margin-top: 30px
+			h4
+				color: #A1A1A1
+				font-size: 20px
+				font-weight: 400
+				padding: 0
+				margin: 0
+				margin-top: 20px
+	.buy-picture
+		width: auto
+		padding-left: 37px
+		padding-top: 64px
+		.desc-picture
+			h2
+				font-weight: bold
+				font-size: 36px
+				margin: 0
+			h4
+				color: #949494
+				font-size: 14px
+				font-weight: 400
+			p
+				font-size: 12px
+				color: #484848
+		.buy
+			display: flex
+			margin-top: 50px
+			.price
+				width: 50%
+				p
+					font-size: 35px
+					font-weight: 400
+					margin: 0
+					span
+						font-size: 16px
+						font-weight: 400
+				.size
+					font-size: 11px
+					color: #484848
+					margin-top: 18px
+				.added
+					display: flex
+					justify-content: flex-end
+					font-size: 11px
+					color: #828282
+					margin-top: 95px
+			.buy-buttons
+				display: flex
+				flex-direction: column
+				justify-content: center		
+				margin-left: 40px		
+				a
+					display: flex
+					justify-content: center
+					align-items: center
+					text-decoration: none
+					text-transform: uppercase
+					font-size: 14px
+					font-weight: bold
+					width: 222px
+					height: 40px
+					border-radius: 3px
+				.buy-origin
+					color: #fff
+					margin-bottom: 16px
+					transition: all .2s				
+				.dload-copy
+					margin-bottom: 55px
+				.dload-copy, .add-copy
+					border: 1.3px solid #000
+					color: #000000					
+					transition: all .2s
+				.dload-copy:hover, .add-copy:hover
+					border: 1.3px solid rgba(0, 0, 0, 0.5)
+					
+
+
+///// Block picture end \\\\\\\\
+
+
+///// Modals begin \\\\\\\\
+.overlay
+	display: none
+	position: fixed
+	z-index: 1
+	width: 100%
+	height: 100%
+	top: 0
+	right: 0
+	left: 0
+	bottom: 0
+	background-color: rgba(0,0,0, .6)
+.modal
+	position: fixed
+	z-index: 2
+	top: -150%
+	transition: all 1s
+	left: 50%
+	transform: translate(-50%, -50%)
+	background-color: #fff
+	width: 588px
+	min-height: 300px
+	border-radius: 10px
+	font-size: 12px
+	padding: 0px 20px 20px 20px
+	box-shadow: 0 0 10px rgba(0,0,0,0.5)
+	.head
+		display: flex
+		align-items: center
+		height: 55px
+		position: relative
+		border-bottom: 1px solid #E8E8E8
+		width: 100%		
+		&_first
+			position: absolute
+			left: 10px
+			width: 50%
+			height: 100%
+			font-size: 12px
+			display: flex
+			align-items: center
+			border-right: 1px solid #e8e8e8
+			&:hover
+				color: #828282
+			&::before
+				content: ''
+				display: block
+				height: 12px
+				width: 12px				
+				border-left: 1px solid darken(#e8e8e8, 50%)
+				border-bottom: 1px solid darken(#e8e8e8, 50%)
+				transform: rotate(45deg) translate(-1px, -1px)
+		&_second
+			position: absolute
+			right: 10px
+			color: #0951AF
+.modal_active
+	top: 50%
+.dload-modal	
+	.modal_content
+		display: flex
+		.left
+			display: flex
+			width: 40%
+			min-height: 180px
+			flex-direction: column		
+			align-items: center
+			justify-content: space-between
+			color: #484848
+			h3
+				font-size: 48px
+				margin: 0
+				padding: 0
+				margin-top: 15px
+			h4
+				margin-top: 30px
+				font-size: 18px
+				font-weight: 400
+			p
+				font-size: 18px
+				margin: 0
+				padding: 0
+			a
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 173px
+				height: 51px
+				background-color: #e3e3e3
+				border-radius: 6px
+				font-size: 14px
+				font-weight: bold
+				transition: all .2s
+				&:hover
+					background-color: darken(#e3e3e3, 12%)
+		.right
+			display: flex
+			width: 60%
+			flex-direction: column
+			justify-content: space-between
+			align-items: center
+			h3
+				font-size: 48px
+				font-weight: 400
+				margin: 0
+				margin-top: 20px
+			p
+				font-size: 14px
+			a
+				width: 324px
+				height: 51px
+				color: #fff
+				font-size: 18px
+				font-weight: bold
+				text-transform: uppercase
+				border-radius: 5px
+				display: flex
+				justify-content: center
+				align-items: center
+.buy-modal
+	.head
+		&_first
+			border: none
+		&_second
+			display: flex
+			align-items: center
+			color: #000
+			height: 100%
+			margin: 0
+			right: 0
+	.modal-content
+		display: flex
+		.pic
+			display: flex
+			width: 33%
+			min-height: 180px
+			flex-direction: column		
+			align-items: center
+			justify-content: space-between
+			color: #484848
+			h3
+				font-size: 48px
+				margin: 0
+				padding: 0
+				margin-top: 15px
+			h4
+				margin-top: 30px
+				font-size: 18px
+				font-weight: 400
+			p
+				font-size: 18px
+				margin: 0
+				padding: 0
+			a
+				width: 170px
+				height: 51px
+				color: #fff
+				font-size: 18px
+				font-weight: bold
+				text-transform: uppercase
+				border-radius: 5px
+				display: flex
+				justify-content: center
+				align-items: center
+.add-modal
+	.modal_content
+		display: flex
+		justify-content: space-between		
+		.left
+			display: flex
+			flex-direction: column
+			justify-contene: space-between
+			h3
+				font-size: 24px
+		.right
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			align-items: center
+			.save
+				display: flex
+				align-items: center
+				img
+					margin-right: 15px
+				a
+					display: flex
+					justify-content: center
+					align-items: center
+					width: 207px
+					height: 51px
+					color: #fff
+					text-transform: uppercase
+					border-radius: 5px
+					font-size: 14px
+					font-weight: bold
+///// Modals end 		\\\\\\\\
+.blue_btn
+	background-color: #0951AF
+	color: #fff
+.blue_btn:hover
+	background-color: #4279C1
+.blue_btn:active
+	background-color: rgba(9, 81, 175, 0.91)

@@ -1,11 +1,47 @@
-var slideNow = 1;
-var slideCount = $('#slidewrapper').children().length;
-var slideInterval = 3000;
-var navBtnId = 0;
-var translateWidth = 0;
+let slideNow = 1;
+let slideCount = $('#slidewrapper').children().length;
+let slideInterval = 3000;
+let navBtnId = 0;
+let translateWidth = 0;
 
 $(document).ready(function() {
-    var switchInterval = setInterval(nextSlide, slideInterval);
+    // modals begin
+	let overlay = $('.overlay'),
+    	dloadLink = $('.dload-copy'),
+    	back = $('.head_first'),
+    	morePic = $('.morepic'),
+    	addCollection = $('.add-copy'),
+    	dloadModal = $('.dload-modal'),
+    	buyModal = $('.buy-modal'),
+    	addModal= $('.add-modal');
+    back.click(function() {
+    	overlay.hide();
+    	dloadModal.removeClass('modal_active');
+    	buyModal.removeClass('modal_active');
+    	addModal.removeClass('modal_active');
+    });
+    overlay.click(function() {
+    	overlay.hide();
+    	dloadModal.removeClass('modal_active');
+    	buyModal.removeClass('modal_active');
+    	addModal.removeClass('modal_active');
+    });
+    dloadLink.click(function() {
+    	overlay.show();
+    	dloadModal.addClass('modal_active');
+    });
+    morePic.click(function() {
+    	buyModal.addClass('modal_active');
+    });
+    addCollection.click(function() {    	
+    	overlay.show();
+    	addModal.addClass('modal_active');
+    });
+    // modals end
+
+
+	//slider begin
+    let switchInterval = setInterval(nextSlide, slideInterval);
 
     $('#viewport').hover(function() {
         clearInterval(switchInterval);
@@ -20,10 +56,9 @@ $(document).ready(function() {
     $('#prev-btn').click(function() {
         prevSlide();
     });
-
+	
     $('.slide-nav-btn').click(function() {
         navBtnId = $(this).index();
-
         if (navBtnId + 1 != slideNow) {
             translateWidth = -$('#viewport').width() * (navBtnId);
             $('#slidewrapper').css({
@@ -69,5 +104,12 @@ function prevSlide() {
             '-ms-transform': 'translate(' + translateWidth + 'px, 0)',
         });
         slideNow--;
-    }
+    }	
+    //slider end
+
+
+
+
+
+
 }
