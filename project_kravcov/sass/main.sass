@@ -320,6 +320,7 @@ header
 				padding: 0
 				margin: 0
 				margin-top: 20px
+				margin-bottom: 80px
 	.buy-picture
 		width: auto
 		padding-left: 37px
@@ -588,6 +589,95 @@ header
 					font-size: 14px
 					font-weight: bold
 ///// Modals end 		\\\\\\\\
+
+////// Block gallery begin \\\\\\
+
+.block_galley
+	h2
+		font-size: 36px
+		font-weight: 700
+	.sort_block
+		display: flex
+
+		a
+			padding: 15px 20px
+			color: #fff
+			font-size: 14px
+			text-transform: uppercase
+			background-color: #808080
+			border-radius: 3px
+			margin: 15px 3px
+			&:hover 
+				background-color: darken(#808080, 15%)
+			span 
+				position: relative
+				display: inline-block
+				height: 15px
+				width: 15px
+				margin-left: 15px
+				&::before
+					content: ''
+					display: block
+					position: absolute
+					height: 2px
+					width: 13px
+					top: 9px
+					left: 0
+					background-color: #fff
+					transform: rotate(-45deg)
+				&::after
+					content: ''
+					display: block
+					position: absolute
+					height: 2px
+					width: 13px
+					top: 9px
+					left: 0
+					background-color: #fff
+					transform: rotate(45deg)
+
+	.gallery
+		display: flex
+		img
+			margin: 3px
+		.column
+			display: flex
+			flex-direction: column
+			.empty
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 214px
+				height: 252px
+				border: 1px solid grey
+				margin: 3px
+				border-radius: 5px
+				span
+					display: flex
+					justify-content: center
+					align-items: center
+					width: 85px
+					height: 85px
+					border: 1px solid grey
+					border-radius: 50%
+					position: relative
+					&::before
+						content: ''
+						display: block
+						position: absolute
+						height: 2px
+						width: 15px
+						background-color: grey
+					&::after
+						content: ''
+						display: block
+						position: absolute
+						height: 2px
+						width: 15px
+						background-color: grey
+						transform: rotate(90deg)
+
+////// Block gallery end \\\\\\
 .blue_btn
 	background-color: #0951AF
 	color: #fff

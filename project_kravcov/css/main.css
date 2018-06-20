@@ -397,7 +397,8 @@ header {
       font-weight: 400;
       padding: 0;
       margin: 0;
-      margin-top: 20px; }
+      margin-top: 20px;
+      margin-bottom: 80px; }
   .block-picture .buy-picture {
     width: auto;
     padding-left: 37px;
@@ -774,6 +775,112 @@ header {
         border-radius: 5px;
         font-size: 14px;
         font-weight: bold; }
+
+.block_galley h2 {
+  font-size: 36px;
+  font-weight: 700; }
+.block_galley .sort_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .block_galley .sort_block a {
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: #808080;
+    border-radius: 3px;
+    margin: 15px 3px; }
+    .block_galley .sort_block a:hover {
+      background-color: #5a5a5a; }
+    .block_galley .sort_block a span {
+      position: relative;
+      display: inline-block;
+      height: 15px;
+      width: 15px;
+      margin-left: 15px; }
+      .block_galley .sort_block a span::before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 13px;
+        top: 9px;
+        left: 0;
+        background-color: #fff;
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg); }
+      .block_galley .sort_block a span::after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 13px;
+        top: 9px;
+        left: 0;
+        background-color: #fff;
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg); }
+.block_galley .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .block_galley .gallery img {
+    margin: 3px; }
+  .block_galley .gallery .column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .block_galley .gallery .column .empty {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 214px;
+      height: 252px;
+      border: 1px solid grey;
+      margin: 3px;
+      border-radius: 5px; }
+      .block_galley .gallery .column .empty span {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 85px;
+        height: 85px;
+        border: 1px solid grey;
+        border-radius: 50%;
+        position: relative; }
+        .block_galley .gallery .column .empty span::before {
+          content: "";
+          display: block;
+          position: absolute;
+          height: 2px;
+          width: 15px;
+          background-color: grey; }
+        .block_galley .gallery .column .empty span::after {
+          content: "";
+          display: block;
+          position: absolute;
+          height: 2px;
+          width: 15px;
+          background-color: grey;
+          -webkit-transform: rotate(90deg);
+                  transform: rotate(90deg); }
 
 .blue_btn {
   background-color: #0951AF;
