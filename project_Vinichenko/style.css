@@ -1,0 +1,49 @@
+.container{
+  background: #fbfbfb;
+  display: flex;
+    height: 52px;
+
+}
+.form-group{
+    margin-left: 24px;
+    width: 337px;
+}
+.logo{
+    padding: 13px 1px;
+}
+#search-line{
+    border: none;
+    height: 30px;
+    width: 437px;
+    box-shadow: 0px 9px 27px rgba(0, 0, 0, 0.05);
+    margin-top: 2px;
+}
+#search-btn{
+    width: 60px;
+    height: 28px;
+    border-radius: 2px;
+    margin-left: 32px;
+    background: url(img/btn.png);
+    border: none;
+}
+
+#pointer{
+    margin-left: -19px;
+}
+
+
+.navbar-middle li:nth-child(2){
+    margin-left: -12px;
+}
+.navbar-middle{
+    margin-left: -8px;
+    font-size: 14px;
+    margin-top: -5px;
+
+}
+
+.nav>li>a {
+position: relative;
+display: block;
+padding: 10px 13px;
+}
