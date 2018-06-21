@@ -113,7 +113,7 @@ h1, h2, .btn{
   width: 437px;
   height: 30px;
   top: -5px;
-  left: 0px;
+  left: 1px;
   background: #FFFFFF;
   box-shadow: 0px 9px 27px rgba(0, 0, 0, 0.05);
   border-radius: 3px;
@@ -128,17 +128,23 @@ input::-webkit-input-placeholder {
   font-family: RobotoRegular;
 }
 
-.fa-search {
-  position: relative;
-  left: -60px;
-  top: -5px;
-  font-size: 11px;
-  line-height: 30px;
-  background-image: url(img/navbar/search-bg.svg);
+.navbar-search-btn {
+  background-image: url(img/navbar/search-bg.svg); 
   width: 60px;
   height: 28px;
-  text-align: center;
-  color: #FFFFFF;
+  border-style: none;
+  border-radius: 2px;
+  position: relative;
+  left: -64px;
+  top: -5px;
+}
+
+.navbar-search-btn img{
+  position: relative;
+  top: 2px;
+  left: 1px;
+  width: 12px;
+  height: 12px;
 }
 
 .search-more {
@@ -148,9 +154,9 @@ input::-webkit-input-placeholder {
   left: -4px;
   top: -1px;
 }
-.navbar-search img{
+.search-more img{
   position: relative;
-  left: -50px;
+  left: -54px;
   top: -5px;
 }
 
@@ -164,7 +170,7 @@ a {
   color: #484848;
   font-size: 14px;
   position: relative;
-  left: -73px;
+  left: -74px;
   top: -2px;
 }
 
@@ -229,23 +235,78 @@ a {
 .painting-carousel {
   position: relative;
   top: 1px;
+}
+
+.owl-carousel {
   width: 647px;
 }
 
-
 .owl-carousel .owl-item {
   height: 420px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
 }
 
 .owl-item img{
-  max-height: 100%;
+  flex-shrink:0;
+    min-width:100%;
+  max-height: 100%; 
+}
+
+.owl-buttons {
+  position: relative;
+  /* left: 280px; */
+  bottom: 239px;
+  transition: 1s;
+}
+
+.owl-buttons .owl-prev {
+  position: relative;
+  right: 265px;
+  top: -5px;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #BDBDBD;
+  box-sizing: border-box;
+  border-radius: 19px;
+  transition: 1.5s;
+}
+
+.owl-buttons .owl-prev img {
+  position: relative;
+  width: 6px;
+  height: 12px;
+  transform: scale(-1, 1);
+  right: 1px;
+  top: 4px;
+}
+
+.owl-buttons .owl-next {
+  position: relative;
+  left: 270px;
+  bottom: 5px;
+  width: 28px;
+  height: 28px;
+  background-color: rgba(0, 0, 0, 0.59);
+  border: 1px solid #BDBDBD;
+  box-sizing: border-box;
+  border-radius: 19px;
+  transition: 1.5s;
+}
+
+.owl-buttons .owl-next img {
+  position: relative;
+  left: 1px;
+  top: 4px;
 }
 
 .carousel-buttons {
   display: flex;
   justify-content: center;
   position: relative;
-  top: -50px;
+  top: -98px;
 }
 
 .carousel-btn {
@@ -266,8 +327,7 @@ a {
 
 .carousel-fullscreen-btn{
   display: flex;
-  justify-content: end;
-  
+  justify-content: end; 
 }
 
 .carousel-fullscreen-btn button{
@@ -277,7 +337,6 @@ a {
   background: transparent; 
   border-style: none;
   padding-top: 8px;
-
 }
 
 /* END CAROUSEL DEPENDENCIES */
@@ -426,6 +485,11 @@ a {
   left: 120px;
 }
 
+.social-btn .like-btn {
+  position: relative;
+  top: 1px;
+}
+
 .social-btn .like-btn span {
   position: relative;
   top: -2px;
@@ -519,3 +583,19 @@ a {
   top: 2px;
 }
 
+.paintings-similar-results {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  height: 620px;
+}
+
+.paintings-similar-results-single {
+  width: 214px;
+  margin: 0 10px 10px 0;
+}
+
+.paintings-similar-results img {
+  max-width: 100%;
+  border-radius: 8px; 
+}

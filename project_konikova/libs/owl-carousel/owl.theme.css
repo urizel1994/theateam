@@ -21,9 +21,9 @@
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
 	border-radius: 30px;
-	background: #869791;
-	filter: Alpha(Opacity=50);/*IE7 fix*/
-	opacity: 0.5;
+	background-color: rgba(0, 0, 0, 0.59);
+	filter: Alpha(Opacity=0);/*IE7 fix*/
+	opacity: 0;
 }
 /* Clickable class fix problem with hover on touch devices */
 /* Use it for non-touch hover action */
