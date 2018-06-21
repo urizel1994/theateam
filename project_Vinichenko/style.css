@@ -1,7 +1,8 @@
 
+
 body{
-  //font-family: 'Open Sans', sans-serif;
-//  font-family: Roboto;
+font-family: 'Open Sans', sans-serif;
+font-weight: normal;
 }
 header{
 
@@ -11,10 +12,21 @@ ul{
   list-style: none;
   text-decoration: none;
 }
+a{
+  text-decoration: none;
+}
+h2{
+color: #000000;
+
+font-style: normal;
+font-weight: bold;
+line-height: normal;
+font-size: 26px;
+}
 .header-container{
   display: flex;
   width: 1200px;
-  height: 55px;
+  height: 54px;
   background: #f6f6f6;
   margin: 0 auto;
 padding: 14px 21px;
@@ -52,17 +64,17 @@ padding: 14px 21px;
 white-space: nowrap;
     margin-left: -23px;
     margin-top: -3px;
+
 }
 .links li{
   margin: 0 8px;
+
 }
  .links li a{
 margin-left: 3px;
-   font-style: normal;
-font-weight: normal;
-line-height: normal;
+text-decoration: none;
 font-size: 14px;
-
+color: #484848;
 
 color: #484848;
  }
@@ -86,4 +98,206 @@ margin-left: 14px;
 }
 .btns li:nth-child(6){
     margin-top: -1px;
+}
+.main-container{
+  display: flex;
+  width: 1200px;
+  font-family: Roboto;
+  background: #f6f6f6;
+  margin: 0 auto;
+padding: 14px 21px;
+  border-bottom: 1px solid #E6E6E6;
+}
+.item-info{
+  width: 675px;
+}
+.back-link{
+  display: flex;
+    padding-left: 19px;
+    padding-top: 1px;
+font-family: Roboto;
+    width: 1200px;
+
+}
+.back-link a{
+    text-decoration: none;
+    color: #484848;
+}
+.back-link span{
+    padding-left: 5px;
+    font-size: 12px;
+    word-spacing: 1px;
+}
+.carousel{
+    display: flex;
+    width: 661px;
+    height: 420px;
+    margin-left: 14.5px;
+    margin-top: 7.5px;
+
+
+}
+
+.product h1{
+    font-weight: bold;
+    font-size: 36px;
+    margin-top: 16px;
+    color: #000000;
+}
+.product{
+  width: 525px;
+
+    padding: 21px 28px;
+
+}
+cite{
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-size: 14px;
+  color: #949494;
+}
+.product-author{
+    word-spacing: -2px;
+    margin-top: -6px;
+
+}
+.product-info{
+    margin-top: 11px;
+}
+.product-info p{
+    line-height: 17px;
+    font-size: 12px;
+    color: #484848;
+}
+.buy, .copy, .add{
+  display: flex;
+  justify-content: space-between;
+}
+.buy-price{
+    margin-top: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 35px;
+    word-spacing: -1px;
+}
+.buy-price span{
+    font-size: 15px;
+}
+.buy-btn{
+    margin-right: 27px;
+    background: #1C8EED;
+    width: 222px;
+    height: 40px;
+    margin-top: 40.5px;
+    color: white;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+.copy-info{
+    font-style: normal;
+    font-size: 10px;
+    margin-top: 23.5px;
+    color: #484848;
+    line-height: 12px;
+}
+.downoload-btn{
+    margin-right: 27px;
+    width: 222px;
+    height: 40px;
+    margin-top: 15px;
+    font-size: 16px;
+    padding-left: 8px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    color: #000000;
+    font-weight: bold;
+    background: white;
+}
+.add-count a{
+    text-decoration: none;
+    color: #828282;
+}
+.add-count{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 11px;
+    margin-top: 75px;
+    margin-left: 86px;
+    color: #828282;
+    border-radius: 8px;
+}
+.add-in-collection-btn{
+  width: 222px;
+  height: 40px;
+  margin-top: 58px;
+  padding-left: 9px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  color: #000000;
+  font-weight: bold;
+  background: white;
+  margin-right: 27px;
+}
+
+.social-info{
+display: flex;
+    padding: 25px 0px;
+}
+.watch{
+  margin-left: 29px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+    font-size: 16px;
+    color: #828282;
+}
+.like{
+    margin-left: 298px;
+    margin-top: -5px;
+}
+.dislike{
+    margin-left: 12px;
+    margin-top: -2px;
+}
+.share{
+  margin-left: 48px;
+  margin-top: -5px;
+}
+.share a{
+    text-decoration: none;
+    color: #4F4F4F;
+}
+.date{
+  display: flex;
+    margin-top: -20px;
+    margin-left: 29px;
+    font-size: 14px;
+    color: #A1A1A1;
+}
+.more-info{
+    padding: 0px 29px;
+    margin-top: -16px;
+}
+.more-info p{
+  font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+line-height: 30px;
+font-size: 20px;
+
+color: #A1A1A1;
+}
+.create-year{
+    margin-top: 5px;
+}
+.create-year p{
+    line-height: 0;
 }
