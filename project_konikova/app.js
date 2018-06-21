@@ -14,7 +14,16 @@ $(document).ready(function(){
     
   );
 
+  $(".dialog-buy-pack").magnificPopup(
+    
+  );
+
+  $(".collection-add-btn").magnificPopup(
+    
+  );
+
 });
+
 
 // $(".next").click(function(){
 //   owl.trigger('owl.next');

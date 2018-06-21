@@ -494,7 +494,7 @@ form {
   border-radius: 14px;
 }
 
-.copy-dialog-buy {
+.copy-dialog-buy, .copy-dialog-buy-package, .collection-dialog-options {
   padding: 20px;
 }
 
@@ -602,7 +602,111 @@ form {
   border-style: none;
 }
 
+.copy-dialog-buy-package .dialog-upper-links {
+  margin-bottom: 20px;
+}
 
+.copy-dialog-buy-package .dialog-back {
+  margin-right: 0px;
+  position: relative;
+  right: 7px;
+}
+.copy-dialog-buy-package .dialog-back img {
+  margin-right: 5px;
+}
+
+.copy-dialog-buy-package .dialog-upper-links span {
+  font-size: 13px;
+  color: #000000;
+  position: relative;
+  right: -11px;
+}
+
+.package-options {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.package-option-1, .package-option-2, .package-option-3 {
+  width: 173px;
+}
+
+/* .package-option-offer {
+  margin-top: 15px;
+} */
+
+.package-option-1 button, .package-option-2 button, .package-option-3 button {
+  width: 173px;
+  height: 51px;
+  background: #0951AF;
+  border-radius: 7px;
+  margin-top: 14px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFFFFF;
+  border-style: none;
+}
+
+.dialog-upper-links a {
+  font-size: 12px;
+
+}
+
+.dialog-upper-links .add-folder {
+  margin-left: 205px;
+  color: #0951AF;
+}
+
+.collection-options {
+  padding: 20px;
+}
+
+.collection-options span {
+  font-weight: 800;
+  font-size: 24px;
+  color: #000000;
+  position: relative;
+  top: 10px;
+}
+
+.collection-option-1 img {
+  position: relative;
+  left: 62px;
+}
+
+.collection-option-2 img {
+  position: relative;
+  left: 30px;
+}
+
+.collection-option-3 img {
+  position: relative;
+  left: 54px;
+}
+
+.collection-options button {
+  width: 207px;
+  height: 51px;
+  background: #0951AF;
+  border-radius: 7px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #F2F2F2;
+  border-style: none;
+}
+
+
+.collection-option-1, .collection-option-2, .collection-option-3 {
+  display: flex;
+  justify-content: space-between;
+  height: 51px;
+  align-content: space-between;
+  margin: 12px 0;
+}
 
 
 /* DIALOG WINDOWS END */
