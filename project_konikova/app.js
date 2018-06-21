@@ -8,6 +8,14 @@ owl.owlCarousel({
     URLhashListener: true,
 });
 
+$(document).ready(function(){
+
+  $(".copy-dnlw-btn").magnificPopup(
+    
+  );
+
+});
+
 // $(".next").click(function(){
 //   owl.trigger('owl.next');
 // })
