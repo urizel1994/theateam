@@ -479,6 +479,9 @@ a {
   word-spacing: 0px;
 }
 
+
+
+
 /* DIALOG WINDOWS */
 
 .hidden {
@@ -488,25 +491,30 @@ a {
 form {
   margin: auto;
   width: 587px;
-  height: 300px;
   background: #FFFFFF;
   box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.05);
   border-radius: 14px;
+ 
 }
 
 .copy-dialog-buy, .copy-dialog-buy-package, .collection-dialog-options {
   padding: 20px;
 }
 
+.copy-dialog-buy, .collection-dialog-options{
+   height: 297px;
+}
+
 .dialog-upper-links{
   height: 37px;
   border-bottom: 1px solid #E8E8E8;
+  line-height: 12px;
 }
 
 .dialog-upper-links .dialog-back {
   font-size: 12px;
   color: #484848;
-  margin-right: 85px;
+  margin-right: 89px;
 }
 
 .dialog-upper-links .dialog-back img {
@@ -528,12 +536,13 @@ form {
   width: 173px;
   height: 205px;
   margin: 20px 20px 0 0 ;
+  padding-top: 7px;
 }
 
 .copy-purchase-plan {
   width: 324px;
   height: 205px;
-  margin: 20px 0 0 27px;;
+  margin: 20px 0 0 30px;;
 }
 
 .copy-single-purchase, .copy-purchase-plan {
@@ -554,18 +563,23 @@ form {
 .copy-currency {
   font-size: 14px;
   color: #484848;
+  position: relative;
+  bottom: 3px;
+  left: 1px; 
 }
 
 .copy-item-number {
   font-size: 18px;
-  margin-right: 5px;
+  margin-right: 8px;
+  line-height: 32px;
 }
 
 .plan-id {
   font-family: RobotoLight;
   font-size: 48px;
   position: relative;
-  top: 10px;
+  top: 19px;
+  margin-left: 4px;
 
 }
 
@@ -573,7 +587,8 @@ form {
   font-size: 14px;
   margin-top: 10px;
   position: relative;
-  top: 6px;
+  top: -3px;
+  left: 4px;
 }
 
 .copy-single-purchase button {
@@ -581,7 +596,7 @@ form {
   height: 51px;
   background: #E3E3E3;
   border-radius: 7px;
-  margin-top: 35px;
+  margin-top: 24px;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: bold;
@@ -594,12 +609,16 @@ form {
   height: 51px;
   background: #0951AF;
   border-radius: 7px;
-  margin-top: 35px;
+  margin-top: 31px;
   text-transform: uppercase;
   font-size: 18px;
   font-weight: bold;
   color: #FFFFFF;
   border-style: none;
+}
+
+.copy-dialog-buy-package {
+  height: 300px;
 }
 
 .copy-dialog-buy-package .dialog-upper-links {
