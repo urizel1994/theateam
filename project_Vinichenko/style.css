@@ -100,6 +100,7 @@ margin-left: 14px;
     margin-top: -1px;
 }
 .main-container{
+flex-wrap:wrap;
   display: flex;
   width: 1200px;
   font-family: Roboto;
@@ -137,7 +138,10 @@ font-family: Roboto;
 
 
 }
-
+.func{
+  display: flex;
+width: 480px;
+}
 .product h1{
     font-weight: bold;
     font-size: 36px;
@@ -196,7 +200,7 @@ cite{
     font-weight: 700;
     padding-top: 3px;
     padding-right: 6px;
-    margin-right: 28px;
+    margin-right: -17px;
     background: #0951af;
     width: 222px;
     height: 40px;
@@ -214,7 +218,7 @@ cite{
     line-height: 12px;
 }
 .downoload-btn{
-    margin-right: 28px;
+    margin-right: -17px;
     width: 222px;
     height: 40px;
     margin-top: 15px;
@@ -253,7 +257,7 @@ cite{
     border: 1px solid #000000;
     color: #000000;
     background: white;
-    margin-right: 28px;
+    margin-right: -17px;
     font-size: 12.5px;
     font-weight: 700;
     padding-top: 2px;
@@ -328,4 +332,49 @@ cite{
 }
 .btn{
     padding: 15px 50px;
+}
+.similar{
+  padding: 80px 24px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.similar-h{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.similar-h p{
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 36px;
+}
+.sim-btns{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -44px;
+    margin-top: 11px;
+    width: 1200px;
+}
+.btns-list > li{
+  font-family: Roboto;
+
+  font-size: 14px;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+  padding-left: 3.5px;
+}
+.btns-list > li > button{
+    background: #808080;
+    padding: 10px 22px;
+    height: 40px;
+}
+.col{
+  display: flex;
+
+}
+.col1, .col2, .col3, .col4, .col5{
+    flex-wrap: wrap;
 }
