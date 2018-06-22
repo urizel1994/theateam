@@ -12,7 +12,10 @@
   <link rel="stylesheet" href="libs/bootstrap 4.1.1/css/bootstrap-grid.css">
   <link rel="stylesheet" href="https://yarnpkg.com/en/package/normalize.css">
   <!-- <link rel="stylesheet" href="media.css"> -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="libs/jquery-scrollbar/jquery.scrollbar.css">
+  <link rel="stylesheet" href="popup.css">
+  <link rel="stylesheet" href="scrollbar.css">
+  <link rel="stylesheet" href="main.css">
   
   <title>RAMMKA</title>
 </head>
@@ -143,7 +146,7 @@
                         <span class="copy-price">170</span> 
                         <br>
                         <span class="copy-currency">Рублей</span>
-                        <br><br><br>
+                        <br><br>
                         <span class="copy-item-number">1 Картина</span>
                       </div>
                       <button>Купить</button>
@@ -153,7 +156,7 @@
                         <span class="copy-price">1500</span> 
                         <br>
                         <span class="copy-currency">Рублей</span>
-                        <br><br><br>
+                        <br><br>
                         <span class="copy-item-number">10 Картин</span>
                       </span>
                       <button>Купить</button>
@@ -163,7 +166,7 @@
                         <span class="copy-price">2700</span> 
                         <br>
                         <span class="copy-currency">Рублей</span>
-                        <br><br><br>
+                        <br><br>
                         <span class="copy-item-number">20 Картин</span>
                       </span>
                       <button>Купить</button>
@@ -180,31 +183,32 @@
               <button href=".collection-dialog-options" class="btn collection-add-btn">Добавить в коллекцию</button>
 
               <div class="collection-dialog hidden">
-                <form class="collection-dialog-options">
+                <form class="collection-dialog-options ">
                   <div class="dialog-upper-links">
                       <a href="index.html" class="dialog-back"><img src="img/main/arrow-left.svg">Вернуться к картине</a>
                     <a href="#" class="add-folder">Создать новую папку</a>
                   </div>
-                  <div class="collection-options">   
-                    <div class="collection-option-1">
-                      <span>Избранное</span>
-                      <img src="img/main/globe.svg">
-                      <button>Сохранить</button>
+                  <div class="scrollbar-inner">
+                    <div class="collection-options">   
+                      <div class="collection-option-1">
+                        <span>Избранное</span>
+                        <img src="img/main/globe.svg">
+                        <button>Сохранить</button>
+                      </div>
+                      <div class="collection-option-2">
+                        <span>Моя мастерская</span>
+                        <img src="img/main/lock.svg">
+                        <button>Сохранить</button>
+                      </div>
+                      <div class="collection-option-3">
+                        <span>Интересные</span>
+                        <img src="img/main/globe.svg">
+                        <button>Сохранить</button>
+                      </div>
                     </div>
-                    <div class="collection-option-2">
-                      <span>Моя мастерская</span>
-                      <img src="img/main/lock.svg">
-                      <button>Сохранить</button>
-                    </div>
-                    <div class="collection-option-3">
-                      <span>Интересные</span>
-                      <img src="img/main/globe.svg">
-                      <button>Сохранить</button>
-                    </div>
-                  </div>
+                  </div>  
                 </form>
               </div>
-
             </div>
           </div>
         </div>
@@ -280,8 +284,10 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
 <script src="libs/owl-carousel/owl.carousel.min.js"></script>
 <script src="libs/Wookmark-jQuery-master/wookmark.min.js"></script>
+<script src="libs/jquery-scrollbar/jquery.scrollbar.min.js"></script>
 <script src="libs/magnific-popup/jquery.magnific-popup.js"></script>
 
 <script src="app.js"></script>

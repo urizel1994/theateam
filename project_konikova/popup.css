@@ -1,0 +1,255 @@
+.hidden {
+  display: none;
+}
+
+form {
+  margin: auto;
+  width: 587px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.05);
+  border-radius: 14px;
+ 
+}
+
+.copy-dialog-buy, .collection-dialog-options {
+  padding: 20px;
+  height: 297px;
+}
+
+.dialog-upper-links{
+  height: 37px;
+  border-bottom: 1px solid #E8E8E8;
+  line-height: 12px;
+}
+
+.dialog-upper-links .dialog-back {
+  font-size: 12px;
+  color: #484848;
+  margin-right: 89px;
+}
+
+.dialog-upper-links .dialog-back img {
+  margin-right: 10px;
+}
+
+.dialog-upper-links .dialog-buy-pack {
+  margin-left: 167px;
+  font-size: 12px;
+  color: #0951AF;
+}
+
+.copy-purchase-options {
+  display: flex;
+  flex-direction: row;
+}
+
+.copy-single-purchase {
+  width: 173px;
+  height: 205px;
+  margin: 20px 20px 0 0 ;
+  padding-top: 7px;
+}
+
+.copy-purchase-plan {
+  width: 324px;
+  height: 205px;
+  margin: 20px 0 0 30px;;
+}
+
+.copy-single-purchase, .copy-purchase-plan {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.copy-single-purchase span, .copy-purchase-plan span {
+  height: 118px;
+}
+
+.copy-price {
+  font-size: 48px;
+  color: #484848;
+}
+
+.copy-currency {
+  font-size: 14px;
+  color: #484848;
+  position: relative;
+  bottom: 3px;
+  left: 1px; 
+}
+
+.copy-item-number {
+  font-size: 18px;
+  margin-right: 8px;
+  line-height: 32px;
+}
+
+.plan-id {
+  font-family: RobotoLight;
+  font-size: 48px;
+  position: relative;
+  top: 19px;
+  margin-left: 4px;
+
+}
+
+.plan-left {
+  font-size: 14px;
+  margin-top: 10px;
+  position: relative;
+  top: -3px;
+  left: 4px;
+}
+
+.copy-single-purchase button {
+  width: 173px;
+  height: 51px;
+  background: #E3E3E3;
+  border-radius: 7px;
+  margin-top: 24px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: #4F4F4F;
+  border-style: none;
+} 
+
+.copy-purchase-plan button {
+  width: 324px;
+  height: 51px;
+  background: #0951AF;
+  border-radius: 7px;
+  margin-top: 31px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFFFFF;
+  border-style: none;
+}
+
+.copy-dialog-buy-package {
+  height: 300px;
+  padding: 21px 20px 27px 22px;
+}
+
+.copy-dialog-buy-package .dialog-upper-links {
+  margin-bottom: 20px;
+}
+
+.copy-dialog-buy-package .dialog-back {
+  margin-right: 0px;
+  position: relative;
+  right: 7px;
+}
+.copy-dialog-buy-package .dialog-back img {
+  margin-right: 5px;
+}
+
+.copy-dialog-buy-package .dialog-upper-links span {
+  font-size: 13px;
+  color: #000000;
+  position: relative;
+  right: -11px;
+}
+
+.package-options {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+  margin-top: 27px;
+}
+
+.package-options .copy-item-number {
+  line-height: 35px;
+}
+
+
+.package-option-1, .package-option-2, .package-option-3 {
+  width: 173px;
+}
+
+/* .package-option-offer {
+  margin-top: 15px;
+} */
+
+.package-option-1 button, .package-option-2 button, .package-option-3 button {
+  width: 173px;
+  height: 51px;
+  background: #0951AF;
+  border-radius: 7px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFFFFF;
+  border-style: none;
+  margin-top: 3px;
+}
+
+.dialog-upper-links a {
+  font-size: 12px;
+
+}
+
+.collection-dialog-options .dialog-upper-links .dialog-back {
+  line-height: 9px;
+  margin-left: 2px;
+}
+
+.collection-dialog-options .dialog-upper-links .dialog-back img {
+  margin-top: 2px;
+}
+
+.dialog-upper-links .add-folder {
+  margin-left: 199px;
+  color: #0951AF;
+}
+
+.collection-options {
+  padding: 13px 20px 27px;
+}
+
+.collection-options span {
+  font-weight: 800;
+  font-size: 24px;
+  color: #000000;
+  position: relative;
+  top: 10px;
+}
+
+.collection-option-1 img {
+  position: relative;
+  left: 52px;
+}
+
+.collection-option-2 img {
+  position: relative;
+  left: 20px;
+}
+
+.collection-option-3 img {
+  position: relative;
+  left: 44px;
+}
+
+.collection-options button {
+  width: 207px;
+  height: 51px;
+  background: #0951AF;
+  border-radius: 7px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #F2F2F2;
+  border-style: none;
+}
+
+
+.collection-option-1, .collection-option-2, .collection-option-3 {
+  display: flex;
+  justify-content: space-between;
+  height: 51px;
+  align-content: space-between;
+  margin: 12px 0;
+}
