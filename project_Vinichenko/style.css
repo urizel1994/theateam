@@ -14,6 +14,7 @@ ul{
 }
 a{
   text-decoration: none;
+  cursor: pointer;
 }
 h2{
 color: #000000;
@@ -208,7 +209,9 @@ cite{
     color: white;
     font-size: 14px;
     border: none;
-
+}
+.buy-btn:hover{
+    background: #4279C1;
 }
 .copy-info{
     font-style: normal;
@@ -328,13 +331,14 @@ cite{
 
 }
 .carousel-indicators li{
-    margin: 0px 15px;
+
+text-indent: -40px;
 }
 .btn{
     padding: 15px 50px;
 }
 .similar{
-  padding: 80px 24px;
+  padding: 80px 24.5px;
   display: flex;
   flex-wrap: wrap;
 
@@ -349,6 +353,7 @@ cite{
     font-weight: bold;
     line-height: normal;
     font-size: 36px;
+    color: #000000;
 }
 .sim-btns{
     display: flex;
@@ -368,13 +373,123 @@ cite{
 }
 .btns-list > li > button{
     background: #808080;
-    padding: 10px 22px;
+    padding: 0px 24px;
     height: 40px;
+    border: none;
+    border-radius: 2px;
+    margin-top: 1px;
 }
 .col{
   display: flex;
+  padding: 6px 0px;
 
 }
 .col1, .col2, .col3, .col4, .col5{
     flex-wrap: wrap;
+}
+.col2, .col3, .col4, .col5{
+    margin-left: -30px;
+}
+.col img{
+  margin-bottom: 20px;
+}
+.btn{
+  color: black;
+}
+.modal-dialog{
+  width: 587px;
+}
+.modal-body{
+    display: flex;
+}
+.modal-header{
+    display: flex;
+}
+.modal-header .back{
+    width: 50%;
+    text-align: left;
+    display: inline;
+}
+.modal-header .back img{
+    padding-right: 5px;
+}
+.buy-block{
+    padding: 0px 4px;
+    text-align: center;
+}
+
+.modal-header .buy{
+    width: 50%;
+    text-align: right;
+    display: inline;
+}
+.modal-header a{
+    font-size: 12px;
+    color: #0951AF;
+}
+.modal-header .back{
+    padding-left: 5px;
+}
+.modal-header .buy{
+    padding-right: 5px;
+}
+.back a{
+    font-size: 12px;
+    color: #484848;
+}
+.price h2{
+    font-size: 48px;
+    color: #484848;
+}
+.bbtn{
+    padding-bottom: 5px;
+}
+.buybtn{
+    width: 173px;
+    height: 51px;
+    border: none;
+    background: #E3E3E3;
+    border-radius: 7px;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 14px;
+    color: #4F4F4F;
+}
+.currency{
+  font-size: 13px;
+  color: #484848;
+  margin-top: -8px;
+}
+.count{
+    font-size: 18px;
+    color: #484848;
+    padding-top: 15px;
+}
+.download-block{
+    text-align: center;
+    padding: 0px 46px;
+}
+.pack h2{
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 48px;
+      color: #000000;
+}
+.process{
+    padding-top: 40px;
+    font-size: 14px;
+    color: #000000;
+}
+.downbtn{
+    width: 324px;
+    height: 51px;
+    border: none;
+    background: #E3E3E3;
+    border-radius: 7px;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 18px;
+    color: #FFFFFF;
+    background: #0951AF;
 }

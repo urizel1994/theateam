@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <title>RAMMKA</title>
-
+<script type="text/javascript" src="/js/scripts.js"></script>
+  <script type="text/javascript" scr="js/jquery-1.8.3.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -59,9 +60,9 @@
           <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="btn"></li>
-              <li data-target="#myCarousel" data-slide-to="1" class="btn"></li>
-              <li data-target="#myCarousel" data-slide-to="2" class="btn"></li>
+              <li data-target="#myCarousel" data-slide-to="0" class="btn">Оригинал</li>
+              <li data-target="#myCarousel" data-slide-to="1" class="btn">На устройствах</li>
+              <li data-target="#myCarousel" data-slide-to="2" class="btn">В интерьере</li>
             </ol>
 
             <!-- Wrapper for slides -->
@@ -142,7 +143,7 @@
          </div>
          <div class="copy">
              <div class="copy-info">Размер электронной копии: <br> 5458 x 3639 пикселей</div>
-            <button class="buttn downoload-btn">СКАЧАТЬ КОПИЮ</button>
+            <button class="buttn downoload-btn" data-toggle="modal" data-target="#download-form">СКАЧАТЬ КОПИЮ</button>
         </div>
         <div class="add">
           <div class="add-count">
@@ -198,6 +199,51 @@
 
     </div>
   </main>
+
+  <!-- Modal -->
+<div class="modal fade" id="download-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="back">
+          <a data-dismiss="modal"><img src="img/Vector-180.png">Вернуться к картине</a>
+        </div>
+        <div class="buy">
+          <a class="buy-pic" data-dismiss="modal">Приобрести наборы картин</a>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="buy-block">
+          <div class="price">
+            <h2>170</h2>
+          </div>
+          <div class="currency">
+            <p>Рублей</p>
+          </div>
+          <div class="count">
+            <p>1 Картина</p>
+          </div>
+          <div class="bbtn">
+            <button type="button" class="buybtn">Купить</button>
+          </div>
+
+        </div>
+        <div class="download-block">
+          <div class="pack">
+            <h2>Мой пакет</h2>
+          </div>
+          <div class="process">
+            <p>Осталось скачать 8 из 10</p>
+          </div>
+          <div class="dbtn">
+            <button type="button" class="downbtn">Скачать</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
   </body>
 </html>
