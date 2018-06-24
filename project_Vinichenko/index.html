@@ -150,7 +150,7 @@
             <a href="#"><img src="img/sloi.png" alt=back>
               <span>Добавлено 5 раз</span></a>
           </div>
-           <button class="buttn add-in-collection-btn">ДОБАВИТЬ В КОЛЛЕКЦИЮ</button>
+           <button class="buttn add-in-collection-btn" data-toggle="modal" data-target="#collection-form">ДОБАВИТЬ В КОЛЛЕКЦИЮ</button>
         </div>
 
         <div class="">
@@ -300,6 +300,56 @@
           </div>
         </div>
 
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="collection-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="back">
+          <a data-dismiss="modal"><img src="img/Vector-180.png">Вернуться к картине</a>
+        </div>
+        <div class="buy">
+          <a class="buy-pic" data-dismiss="modal">Создать новую папку</a>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="collect-name">
+          <div class="fav">
+            <span>Избранное</span>
+          </div>
+          <div class="workshop">
+            <span>Моя мастерская</span>
+          </div>
+          <div class="inter">
+            <span>Интересные</span>
+          </div>
+        </div>
+        <div class="icons">
+          <div class="e-icon">
+              <img src="img/earth.png" alt="icon">
+          </div>
+        <div class="b-icon">
+          <img src="img/block.png" alt="icon">
+        </div>
+          <div class="e2-icon">
+              <img src="img/earth.png" alt="icon">
+          </div>
+        </div>
+        <div class="buttons">
+          <div class="fav-btn">
+            <button type="button" class="downbtn">СОХРАНИТЬ</button>
+          </div>
+          <div class="workshop-btn">
+            <button type="button" class="downbtn">СОХРАНИТЬ</button>
+          </div>
+          <div class="inter-btn">
+            <button type="button" class="downbtn">СОХРАНИТЬ</button>
+          </div>        
+        </div>
       </div>
     </div>
   </div>
