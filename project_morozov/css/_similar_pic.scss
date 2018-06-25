@@ -1,0 +1,86 @@
+.similar-pic {
+    padding-left: 33px;
+    margin-top: 75px;
+}
+
+.similar-pic__title {
+    @extend %big-title;
+}
+
+.similar-pic__filter {
+    margin-top: 16px;
+    margin-left: 3px;
+    @extend %flex-cont-wrap;
+}
+
+.similar-pic__filter__elem {
+    @extend %flex-elem;
+    margin-left: 5px;
+    width: 87px;
+    height: 40px;
+    background: #808080;
+    border-radius: 2px;
+    color: #FFFFFF;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 11px;
+    &:nth-child(1) {
+        margin-left: -5px;
+    }
+}
+
+.similar-pic__filter__link {
+    margin-left: 6px;
+}
+
+.similar-pic__filter__elem_big {
+    width: 105px !important;
+}
+
+.similar-pic__paintings {
+    @extend %flex-cont-wrap;
+    margin-top: 23px;
+    margin-left: -10px;
+}
+
+.similar-pic__paintings__elem {
+    @extend %flex-elem;
+    margin-left: 10px;
+    &:nth-child(7) {
+        margin-top: -92px;
+    }
+    &:nth-child(8) {
+        margin-top: -44px;
+    }
+    &:nth-child(9) {
+        margin-top: -107px;
+    }
+    &:nth-child(10) {
+        margin-top: 5px;
+    }
+}
+
+.similar-pic__paintings__elem_empty {
+    border: 1px dashed #c7c7c7;
+    width: 214px;
+    height: 150px;
+    border-radius: 8px;
+    margin-top: -53px;
+}
+
+.similar-pic__paintings__elem__add-butn {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    margin-left: 29.5%;
+    margin-top: 22%;
+    position: relative;
+}
+
+.similar-pic__paintings__elem__link {
+    position: absolute;
+    top: 36%;
+    left: 36.3%;
+}
