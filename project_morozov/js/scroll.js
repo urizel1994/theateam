@@ -1,0 +1,1 @@
+new SimpleBar(document.getElementById('popup-list-scroll'), { autoHide: false });
