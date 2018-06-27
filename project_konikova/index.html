@@ -1,1 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">  <link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="libs/owl-carousel/owl.theme.css">
+  <!-- <link rel="stylesheet" href="libs/owl-carousel-2/owl.carousel.css">
+  <link rel="stylesheet" href="libs/owl-carousel-2/owl.theme.default.css"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="libs/bootstrap 4.1.1/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="https://yarnpkg.com/en/package/normalize.css">
+  <!-- <link rel="stylesheet" href="media.css"> -->
+  <link rel="stylesheet" href="libs/jquery-scrollbar/jquery.scrollbar.css">
+  <link rel="stylesheet" href="popup.css">
+  <link rel="stylesheet" href="scrollbar.css">
+  <link rel="stylesheet" href="main.css">
+  
+  <title>RAMMKA</title>
+</head>
+<body>
 
+  <!-- NAVBAR -->
+  <div class="container">
+    <div class="container-nav">
+      <div class="nav-logo">
+        <img src="img/logo/r.svg" alt="R" id="nav-logo-letter-r">
+        <img src="img/logo/a.svg" alt="А" id="nav-logo-letter-a">
+        <img src="img/logo/m.svg" alt="M" id="nav-logo-letter-m">
+        <img src="img/logo/m.svg" alt="M" id="nav-logo-letter-m-2">
+        <img src="img/logo/k.svg" alt="K" id="nav-logo-letter-k">
+        <img src="img/logo/a.svg" alt="А" id="nav-logo-letter-a-2">
+      </div>
+      <div class="navbar-search">
+        <input type="text" id="search-input" placeholder="Поиск">
+        
+          <button class="navbar-search-btn">
+            <img src="img/navbar/search-icon.svg" alt="Поиск">
+          </button>
+        <a href="#" class="search-more">
+          <img src="img/navbar/arrow-down.svg" alt="Ещё" >
+        </a>
+      </div>
+      <div class="nav-links link">
+        <a href="#" class="nav-links-item">Каталог</a>
+        <a href="#" class="nav-links-item">Художники</a>
+        <a href="#" class="nav-links-item">О проекте</a>
+      </div>
+      <div class="nav-btn">
+        <a href="#" id="add-btn"><img src="img/navbar/add-btn.svg" alt="Добавить"></a>
+        <a href="#" id="menu-btn"><img src="img/navbar/menu-btn.svg" alt="Меню"></a>
+        <a href="#" id="case-btn"><img src="img/navbar/case-btn.svg" alt="Покупки"></a>
+        <a href="#" id="profile-btn"><img src="img/navbar/profile-btn.svg" alt=""></a>
+        <span class="profile-unread"></span>
+      </div>      
+    </div>
+  <!-- END NAVBAR -->
+
+  <!-- MAIN -->
+    <div class="container-main">
+      <!-- PAINTING INFO -->
+      <div class="link-back link">
+          <a href="#" alt="Назад"><img src="img/main/arrow-left.svg" >Вернуться ко всем картинам</a>
+        </div>
+      <div class="painting-main">
+        <div class="painting-full">
+          <div class="painting-carousel-full">
+            <div class="painting-carousel">
+              <div class="owl-item" id="painting-original" data-hash="zero">
+                <img src="img/carousel/54b68e50b96943f5cae0a93bd0820307.jpg" alt="Демон сидящий-оригинал">
+              </div>
+              <div class="owl-item" id="painting-mobile" data-hash="one">
+                <img src="img/carousel/54b68e50b96943f5cae0a93bd0820307.jpg" alt="Демон сидящий-устройство">
+              </div>
+              <div class="owl-item" id="painting-interior" data-hash="two">
+                <img src="img/carousel/de457c3b00c383d51379026d2fd6d43f.jpg" alt="Демон сидящий-интерьер">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-buttons">
+            <button class="btn carousel-btn">Оригинал</button>
+            <button class="btn carousel-btn">На устройствах</button>
+            <button class="btn carousel-btn">В интерьере</>
+          </div>
+          <div class="carousel-fullscreen-btn">
+            <button><img src="img/main/full-screen.svg" alt="На весь экран"></button>
+          </div>
+        </div>
+
+        <div class="painting-description">
+          <div class="painting-name">
+            <h1>Демон сидящий</h1>
+          </div>
+          <div class="painting-char">
+            <span class="painting-artist">Автор: Николай Воскресенский</span>
+            <h4 class="painting-canvas">Ширина: 30 см. х Длина: 40 см. <br> Материалы: Холст, Масло.</h4>
+          </div>
+
+          <div class="user-options">
+            <div class="buyer-info">
+              <span class="original-price">300 000<span class="buyer-currency">руб.</span></span>
+              <button class="btn buyer-btn">Купить оригинал</button>  
+            </div>
+            <div class="copy-info">
+              <span class="copy-size">Размер электронной копии: <br>5458 х 3639 пикселей</span>
+              <button href=".copy-dialog-buy" class="btn copy-dnlw-btn">Скачать копию</button>
+
+              <div class="copy-dialog hidden">
+                <form class="copy-dialog-buy">
+                  <div class="dialog-upper-links">
+                    <a href="index.html" class="dialog-back"><img src="img/main/arrow-left.svg">Вернуться к картине</a>
+                    <a href=".copy-dialog-buy-package" class="dialog-buy-pack">Приобрести наборы картин</a>
+                  </div>
+                  <div class="copy-purchase-options">
+                    <div class="copy-single-purchase">
+                      <span> 
+                        <span class="copy-price">170</span> 
+                        <br>
+                        <span class="copy-currency">Рублей</span>
+                        <br><br>
+                        <span class="copy-item-number">1 Картина</span>
+                      </span>
+                      <button>Купить</button>
+                    </div>
+                    <div class="copy-purchase-plan">
+                      <span> 
+                        <span class="plan-id">Мой пакет</span> 
+                        <br><br><br><br> 
+                        <span class="plan-left">Осталось скачать 8 из 10</span>
+                      </span>
+                      <button>Скачать</button>
+                    </div>
+                  </div>  
+                </form>
+
+                <form class="copy-dialog-buy-package">
+                  <div class="dialog-upper-links">
+                      <a href="index.html" class="dialog-back"><img src="img/main/arrow-left.svg">Вернуться к картине</a>
+                    <span>Скачивая картины на нашем сайте, вы поддерживаете художника!</span>
+                  </div>
+                  <div class="package-options"> 
+                    <div class="package-option-1">
+                      
+                      <div class="package-option-offer">
+                        <span class="copy-price">170</span> 
+                        <br>
+                        <span class="copy-currency">Рублей</span>
+                        <br><br>
+                        <span class="copy-item-number">1 Картина</span>
+                      </div>
+                      <button>Купить</button>
+                    </div>
+                    <div class="package-option-2">
+                      <span>
+                        <span class="copy-price">1500</span> 
+                        <br>
+                        <span class="copy-currency">Рублей</span>
+                        <br><br>
+                        <span class="copy-item-number">10 Картин</span>
+                      </span>
+                      <button>Купить</button>
+                    </div>
+                    <div class="package-option-3">
+                      <span>
+                        <span class="copy-price">2700</span> 
+                        <br>
+                        <span class="copy-currency">Рублей</span>
+                        <br><br>
+                        <span class="copy-item-number">20 Картин</span>
+                      </span>
+                      <button>Купить</button>
+                    </div>
+                  </div>   
+                </form>
+              </div>
+
+            </div>
+            <div class="collection-info">
+              <div class="collection-added-times"><img src="img/main/stock.svg" alt="">
+                <span>Добавлена 5 раз</span>
+              </div>
+              <button href=".collection-dialog-options" class="btn collection-add-btn">Добавить в коллекцию</button>
+
+              <div class="collection-dialog hidden">
+                <form class="collection-dialog-options ">
+                  <div class="dialog-upper-links">
+                      <a href="index.html" class="dialog-back"><img src="img/main/arrow-left.svg">Вернуться к картине</a>
+                    <a href="#" class="add-folder">Создать новую папку</a>
+                  </div>
+                  <div class="scrollbar-inner">
+                    <div class="collection-options">   
+                      <div class="collection-option-1">
+                        <span>Избранное</span>
+                        <img src="img/main/globe.svg">
+                        <button>Сохранить</button>
+                      </div>
+                      <div class="collection-option-2">
+                        <span>Моя мастерская</span>
+                        <img src="img/main/lock.svg">
+                        <button>Сохранить</button>
+                      </div>
+                      <div class="collection-option-3">
+                        <span>Интересные</span>
+                        <img src="img/main/globe.svg">
+                        <button>Сохранить</button>
+                      </div>
+                    </div>
+                  </div>  
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+
+      <div class="social-info">
+        <span class="views-total">999 просмотров</span>
+        <div class="social-btn">
+          <a href="#" class="like-btn"><img src="img/main/like.svg" alt=""><span>1</span></a>
+          <a href="#" class="dislike-btn"><img src="img/main/dislike.svg" alt=""><span>0</span></a>
+          <a href="#" class="share-btn"><img src="img/main/redo.svg" alt="">Поделиться</a>
+        </div>
+        <br>
+      </div>
+      <span class="published-in">Опубликовано: 19.04.2018</span>
+      <div class="painting-info">
+        <div class="painting-owner">
+          <h2>Владелец</h2>
+          <span>Бадер ибн-Абдулла ибн Мохаммед ибн Фархан Аль-Сауд</span>
+        </div>
+        <div class="painting-date">
+          <h2>Год создания</h2>
+          <span>1990</span>
+        </div>
+      </div>
+      <!-- END PAINTING DESCRIPTION -->
+
+      <!-- SIMILAR PAINTINGS -->
+      <div class="paintings-similar">
+        <h2>Похожие картины</h2>
+        <div class="tag-nest">
+          <button class="tag-nest-single">Озеро<img src="img/main/cross.svg" alt="Отменить"></button>
+          <button class="tag-nest-single">Лес<img src="img/main/cross.svg" alt="Отменить"></button>
+          <button class="tag-nest-single">Лес<img src="img/main/cross.svg" alt="Отменить"></button>
+          <button class="tag-nest-single">Озеро<img src="img/main/cross.svg" alt="Отменить"></button>
+          <button class="tag-nest-single">Лес<img src="img/main/cross.svg" alt="Отменить"></button>
+        </div>
+        <div class="paintings-similar-results">
+          <div class="paintings-similar-results-single">
+            <img src="img/similar/4f3f28e6cc91531ad4635f37c928422a.jpg" alt="">
+          </div>  
+          <div class="paintings-similar-results-single">  
+            <img src="img/similar/98c2a293d8b936ec78db7531a3f999c9.jpg" alt="">
+          </div> 
+          <div class="paintings-similar-results-single">  
+            <img src="img/similar/811875e109e50a55db82afaf56413ea8.jpg" alt="">
+          </div>   
+          <div class="paintings-similar-results-single"> 
+            <img src="img/similar/ae813dba0af00be581068501d2e97fbc.jpg" alt="">
+          </div> 
+          <div class="paintings-similar-results-single">
+              <img src="img/similar/d36cf1fc0374ae08fcdefe2cf3fa42e7.jpg" alt="">
+          </div>
+          <div class="paintings-similar-results-single">  
+            <img src="img/similar/d92f2c3458b7b61b9ebd0dc8ccbfc167.jpg" alt="">
+          </div>  
+          <div class="paintings-similar-results-single"> 
+            <img src="img/similar/9d54b5a2665b664c1e9f9e16136e428e.jpg" alt="">
+          </div> 
+          <div class="paintings-similar-results-single">
+            <img src="img/similar/f4500f841c8c540634fb7b73e24bbf87.jpg" alt="">
+          </div> 
+          <div class="paintings-similar-results-single">
+            <img src="img/similar/e92c6cadff5229a250469a5199b46b68.jpg" alt="">
+          </div>    
+        </div>  
+      </div>
+    </div>
+    <!-- END SIMILAR PAINTINGS -->
+  </div>
+  <!-- END MAIN -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+<script src="libs/owl-carousel/owl.carousel.min.js"></script>
+<script src="libs/Wookmark-jQuery-master/wookmark.min.js"></script>
+<script src="libs/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+<script src="libs/magnific-popup/jquery.magnific-popup.js"></script>
+
+<script src="app.js"></script>
+</body>
+
+</html>
