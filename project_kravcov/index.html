@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="libs/normalize.css">
+  <link rel="stylesheet" href="libs/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>RAMMKA</title>
+</head>
+<body>
+	<!-- Header begin -->
+	<header class="header">
+		<div class="container-fluid">
+			<div class="container">
+				<div class="logo">
+					<img src="img/logo.svg" onerror="this.onerror=null; this.src='img/logo.png'">
+				</div>
+				<div class="block_search">
+					<div class="search">
+						<input type="text" placeholder="Поиск">
+						<button>
+							<!-- <img src="img/lupa.png" alt="search "> -->
+							<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect width="1.60447" height="6.36851" rx="0.802235" transform="matrix(0.725155 -0.688585 0.695743 0.718291 6.40527 7.42578)" fill="white"/>
+								<ellipse cx="4.6186" cy="4.57299" rx="4.6186" ry="4.57299" transform="translate(-0.000488281)" fill="white"/>
+								<ellipse cx="3.84884" cy="3.81082" rx="3.84884" ry="3.81082" transform="translate(0.769287 0.761719)" fill="#627FC5"/>
+							</svg>
+			
+						</button>
+					</div>
+				</div>
+				<a href="#" class="angle"></a>
+				<div class="menu">
+					<ul>
+						<li><a href="#">Каталог</a></li>
+						<li><a href="#">Художники</a></li>
+						<li><a href="#">О проекте</a></li>
+					</ul>
+				</div>
+				<div class="buttons">
+					<a href="#" class="btn-plus"><span></span></a>
+					<a href="#" class="btn-burger"><span></span></a>
+					<a href="#" class="btn-chest">
+						<img src="img/chest.svg" onerror="this.onerror=null; this.src='img/chest.png'">
+					</a>
+					<a href="#" class="btn-profile">
+						<img src="img/profile.svg" onerror="this.onerror=null; this.src='img/profile.png'">
+						<span class="notification"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header end -->
+	<!-- Block picture begin -->
+	<div class="container block-picture">
+		<div class="left-side">
+			<a href="#" class="back-to-pictures">Вернутся ко всем картинам</a>
+			<div class="picture">
+				<div id="block-for-slider">
+			        <div id="viewport">
+			            <ul id="slidewrapper">
+			                <li class="slide"><img src="img/orig_demon.jpg" alt="1" class="slide-img"></li>
+			                <li class="slide"><img src="img/devices_demon.jpg" alt="2" class="slide-img"></li>
+			                <li class="slide"><img src="img/int_demon.png" alt="3" class="slide-img"></li>
+			            </ul>
+			            <div id="prev-next-btns">
+			                <div id="prev-btn"><span></span></div>
+			                <div id="next-btn"><span></span></div>
+            			</div>
+
+            			<ul id="nav-btns">
+			                <li class="slide-nav-btn">Оригинал</li>
+			                <li class="slide-nav-btn">На устройствах</li>
+			                <li class="slide-nav-btn">В интерьере</li>
+			            </ul>
+			        </div>
+			    </div>
+			</div>
+			<div class="under-slider">
+		    	<div class="views">
+		    			<span>999</span> просмотров		    		
+		    	</div>
+		    	<div class="likes">
+		    		<div class="like"><a href="#"><img src="img/like.svg" onerror="this.onerror=null; this.src='img/like.png'"><span>1</span></a></div>
+		    		<div class="dislike"><a href="#"><img src="img/dislike.svg" onerror="this.onerror=null; this.src='img/dislike.png'"><span>0</span></a></div>
+		    		<div class="share"><a href="#"><img src="img/share.svg" onerror="this.onerror=null; this.src='img/share.png'"><span>Поделиться</span></a></div>
+		    	</div>		    	
+			</div>
+			<div class="description-picture">
+				<div class="date">Опубликовано 19.04.2018</div>
+				<h2>Владелец</h2>
+				<h4>Бадер ибн-Абдулла ибн Мохаммед ибн Фархан Аль-Сауд</h4>
+				<h2>Год создания</h2>
+				<h4>1990</h4>
+
+			</div>
+		</div>
+		<div class="buy-picture">
+			<div class="desc-picture">
+				<h2>Демон сидящий</h2>
+				<h4>Автор: Николай Воскресенский</h4>
+				<p>Ширина: 30 см. х Длина: 40 см. <br> Материалы: Холст, Масло.</p>
+			</div>
+			<div class="buy">
+				<div class="price">
+					<p>300 000
+						<span>руб</span>
+					</p>
+					<p class="size">Размер электронной копии:<br>5458 x 3639 пикселей</p>
+					<div class="added">
+						<img src="img/added.svg" onerror="this.onerror=null; this.src='img/added.png'">
+						Добавлена <span> 5 </span> раз
+					</div>
+				</div>
+				<div class="buy-buttons">
+					<a href="#" class="blue_btn buy-origin">купить оригинал</a>
+					<a href="#" class="dload-copy">скачать копию</a>
+					<a href="#" class="add-copy">добавить в коллекцию</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Block picture end -->
+
+
+	<!-- Modals begin -->
+		<div class="overlay"></div>
+		<div class="modal dload-modal">
+			<div class="head">
+				<a href="#" class="head_first">Вернуться к картине</a>
+				<a href="#" class="head_second morepic">Приобрести наборы картин</a>
+			</div>
+			<div class="modal_content">
+				<div class="left">
+					<h3>170</h3>
+					<p>Рублей</p>
+					<h4>1 Картина</h4>
+					<a href="#">Купить</a>
+				</div>
+				<div class="right">
+					<h3>Мой пакет</h3>
+					<p>Осталось скачать 8 из 10</p>
+					<a href="#" class="blue_btn">Скачать</a>
+				</div>
+			</div>
+		</div>
+		<div class="modal buy-modal">
+			<div class="head">
+				<a href="#" class="head_first">Вернуться к картине</a>
+				<p class="head_second">Скачивая картины на нашем сайте вы поддерживаете художника! </p>
+			</div>
+			<div class="modal-content">
+				<div class="pic pic-1">
+					<h3>170</h3>
+					<p>Рублей</p>
+					<h4>1 Картина</h4>
+					<a href="#" class="blue_btn">Купить</a>
+				</div>
+				<div class="pic pic-10">
+					<h3>1500</h3>
+					<p>Рублей</p>
+					<h4>10 Картин</h4>
+					<a href="#" class="blue_btn">Купить</a>
+				</div>
+				<div class="pic pic-20">
+					<h3>2700</h3>
+					<p>Рублей</p>
+					<h4>20 Картин</h4>
+					<a href="#" class="blue_btn">Купить</a>
+				</div>
+			</div>
+		</div>
+		<div class="modal add-modal">
+			<div class="head">
+				<a href="#" class="head_first">Вернуться к картине</a>
+				<a href="#" class="head_second">Создать новую папку</a>
+			</div>
+			<div class="modal_content">
+				<div class="left">
+					<h3>Избранное</h3>
+					<h3>Моя мастерская</h3>
+					<h3>Интересные</h3>
+				</div>
+				<div class="right">
+					<div class="save">
+						<img src="img/earth.svg" onerror="this.onerror=null; this.src='img/earth.png'">
+						<a href="#" class="blue_btn">сохранить</a>
+					</div>
+					<div class="save">
+						<img src="img/lock.svg" onerror="this.onerror=null; this.src='img/lock.png'">
+						<a href="#" class="blue_btn">сохранить</a>
+					</div>
+					<div class="save">
+						<img src="img/earth.svg" onerror="this.onerror=null; this.src='img/earth.png'">
+						<a href="#" class="blue_btn">сохранить</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- Modals end -->
+	<div class="container block_galley">
+		<h2>Похожие картины</h2>
+		<div class="sort_block">
+			<a href="#">озеро <span></span></a>
+			<a href="#">лес <span></span></a>
+			<a href="#">лес <span></span></a>
+			<a href="#">озеро <span></span></a>
+			<a href="#">лес <span></span></a>
+		</div>
+		<div class="gallery">
+			<div class="column column1">
+				<img src="img/1.jpg" alt="1">
+				<div class="empty"><a href="#"><span></span></a></div>
+			</div>
+			<div class="column column2">
+				<img src="img/2.jpg" alt="2">
+				<img src="img/6.jpg" alt="6">
+			</div>
+			<div class="column column3">
+				<img src="img/3.jpg" alt="3">
+				<img src="img/7.jpg" alt="7">
+			</div>
+			<div class="column column4">
+				<img src="img/4.jpg" alt="4">
+				<img src="img/8.jpg" alt="8">
+			</div>
+			<div class="column column5">
+				<img src="img/5.jpg" alt="5">
+				<img src="img/9.jpg" alt="9">
+			</div>
+		</div>
+	</div>
+	<script src="libs/jquery-3.3.1.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
