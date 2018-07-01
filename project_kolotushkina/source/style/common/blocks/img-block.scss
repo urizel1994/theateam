@@ -1,0 +1,87 @@
+.picture__img-block {
+  display: flex;
+
+}
+
+.picture__info {
+  margin-left: 27px;
+  margin-top: 1px;
+}
+
+.picture__info-author {
+  color: #949494;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 4px;
+}
+
+.picture__info-information {
+  font-size: 12px;
+  color: #484848;
+  margin-top: 14px;
+  line-height: 17.5px;
+  height: 57px;
+}
+
+.picture__info-buy {
+  display: flex;
+  margin-top: 28px;
+}
+
+.info-buy__about {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-buy__buttons {
+  width: 222px;
+  margin-top: 1px;
+}
+
+.btn__buy {
+  margin-bottom: 16px;
+}
+
+.btn__add {
+  margin-top: 58px;
+  font-size: 13px;
+}
+
+.info-buy__price {
+  font-size: 35px;
+  font-weight: 300;
+  display: flex;
+
+  &-currency {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 18px;
+    margin-left: 5px;
+    margin-right: 60px;
+  }
+}
+.info-buy__ele-info {
+  font-size: 10px;
+  margin-top: 26px;
+  color: #484848;
+  height: 38px;
+}
+
+.info-buy__add {
+  align-self: flex-end;
+  margin-top: 68px;
+  font-weight: 300;
+  color: #828282;
+  font-size: 11px;
+  margin-right: 27px;
+  display: flex;
+}
+
+.info-buy__icon {
+  width: 15px;
+  height: 13px;
+  margin-right: 7px;
+}
+
+
+

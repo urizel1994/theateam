@@ -1,0 +1,129 @@
+.picture__carousel {
+  position: relative;
+}
+
+.picture__carousel-next {
+  position: absolute;
+  right: 20px;
+  top: 191px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid #BDBDBD;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    background: rgba(0, 0, 0, 0.59);
+  }
+}
+
+.carousel-next__icon {
+  width: 6px;
+  height: 12px;
+  fill: white;
+}
+
+.picture__carousel-tabs {
+  position: absolute;
+  bottom: 14px;
+  margin-left: 61px;
+  display: flex;
+}
+
+.carousel-tabs__item {
+  width: 165px;
+  height: 38px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  margin-right: 21px;
+  &_active {
+    background-color: rgba(0, 0, 0, 0.62);
+  }
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.62);
+  }
+}
+
+.carousel-tabs__link {
+  color: #FFF9F9;
+  font-size: 14px;
+}
+
+.carousel__full-size {
+  position: absolute;
+  bottom: 7px;
+  right: 12px;
+
+  &-image {
+    width: 22px;
+    height: 22px;
+    opacity: 0.7;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.picture__carousel-info {
+  display: flex;
+}
+
+.carousel-info__views {
+  color: #828282;
+  margin-top: 19px;
+}
+
+.carousel-info__rate {
+  margin-left: auto;
+  display: flex;
+  margin-top: 14px;
+  margin-right: 37px;
+  height: 20px;
+}
+
+.rate__item {
+  display: flex;
+  align-items: flex-end;
+  margin-right: 10px;
+  color: #828282;
+  font-size: 14px;
+  &-img {
+    width: 21px;
+    height: 21px;
+    margin-right: 2px;
+    opacity: 0.6;
+    &_dislike {
+      transform: rotate(180deg);
+      margin-bottom: -3px;
+    }
+    &_active {
+      opacity: 1;
+    }
+  }
+}
+
+.carousel-info__share {
+  display: flex;
+  margin-top: 17px;
+  color: #4F4F4F;
+  font-size: 14px;
+
+  &-img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.5;
+    margin-right: 5px;
+    margin-top: -3px;
+  }
+}
+
+.picture__carousel-date {
+  font-size: 14px;
+  color: #A1A1A1;
+  margin-top: 16px;
+}
