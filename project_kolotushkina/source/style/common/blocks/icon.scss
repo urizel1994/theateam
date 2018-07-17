@@ -1,0 +1,77 @@
+.icon__logo {
+  width: 119px;
+  height: 20px;
+}
+
+.icon__search {
+  width: 15px;
+  height: 7px;
+  fill: #BDBDBD;;
+  margin-top: 22px;
+  margin-left: 10px;
+}
+
+.icons__round {
+  border: 1px solid #B6C1CD;
+  border-radius: 50%;
+  width: 33px;
+  height: 33px;
+  margin-top: 9px;
+  margin-right: 14px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-add {
+    width: 34px;
+    height: 34px;
+    margin-top: 8px;
+    margin-right: 31px;
+  }
+
+  &-case {
+    margin-right: 13px;
+  }
+  &-user {
+    width: 37px;
+    height: 37px;
+    margin-top: 7px;
+    position: relative;
+  }
+
+  &-new {
+    border-radius: 50%;
+    width: 9px;
+    height: 9px;
+    background: #F24B4B;
+    position: absolute;
+    top: 0px;
+    right: 3px;
+  }
+}
+
+.icons__item {
+  fill: #61707A;
+  &-add {
+    width: 14px;
+    height: 14px;
+  }
+
+  &-hamb {
+    height: 13px;
+    width: 15px;
+  }
+
+  &-case {
+    stroke: #2F4350;
+    fill: white;
+    width: 19px;
+    height: 16px;
+  }
+
+  &-user {
+    width: 37px;
+    height: 37px;
+  }
+}

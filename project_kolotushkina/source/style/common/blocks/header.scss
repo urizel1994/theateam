@@ -1,0 +1,30 @@
+header {
+  border-bottom: 1px solid #E5E5E5;
+  height: 54px;
+  background: white;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: stretch;
+  align-items: flex-start;
+  padding-left: 31px;
+}
+
+.logo {
+  margin-top: 15px;
+}
+
+.header__search {
+  margin-top: 10px;
+  margin-left: 52px;
+}
+
+.header__menu {
+  margin-left: 26px;
+  margin-top: 13px;
+  font-size: 14px;
+}
+
+.header__icons {
+  margin-left: 73px;
+  display: flex;
+}
