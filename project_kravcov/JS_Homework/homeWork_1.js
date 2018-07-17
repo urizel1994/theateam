@@ -75,8 +75,36 @@ console.log(((80/2)-4)/3*2);
 	console.log(iGoToNorth(22));
 // 6. Циклы
 // 6.1
-console.log(((80/2)-4)/3*2);
+	function isPlain(number) {
+		for (let i = 2; i < number/2; i++) {
+			if (number % i === 0) {
+				return false;
+			}
+		}
+		return true;
+	}  
+	console.log(isPlain(7));
 // 6.2
-	console.log(( 9 + 1 ) + (( 1 - ( 2017 % 2 )) * 6));
+	function fib(inp) {
+		let last1 = 1,
+				last2 = 1,
+				fibNum;
+		for (let i = 3; i <= inp; i++) {
+			fibNum = last1 + last2;
+			last1 = last2;
+			last2 = fibNum;
+		}
+		return fibNum;
+	}
+	console.log(fib(7));
 // 6.3
-	console.log((1+2+2*2+2*2*2)*5);
+ function digitSumm(number) {
+	let result = 0,
+			temp;
+	for (let i = number; i > 0; i = (i - temp) / 10) {
+		temp = i %10;
+		result += temp;
+	}
+	return result;
+ }
+ 	console.log(digitSumm(1947));
