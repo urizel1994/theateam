@@ -1,7 +1,7 @@
 /*
 // 					Займёмся арифметикой
 
-(0/2 - 4) - ((80/2 - 4) / 3)
+(80/2 - 4) - ((80/2 - 4) / 3)
 (9 + 1) + ((1 - (2017 % 2)) * 6)
 (1 + 1*2 + 2*2 + 4*2) * 5
 
@@ -140,7 +140,7 @@ function combinations(arr1, arr2){
   for(var i = 0; i < arr1.length; i++){
     for(var j = 0; j < arr2.length; j++){
       tempArr.push(arr1[i], arr2[j]);
-      resArr.push(tempArr);
+      resArr.push(tempArr.slice());
       tempArr = [];
     }
   }
