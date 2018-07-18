@@ -107,7 +107,8 @@ console.log(((80/2)-4)/3*2);
 	}
 	return result;
  }
- 	console.log(digitSumm(1947));
+	 console.log(digitSumm(1947));
+	 
 // 7. Объекты
 // 7.1
   let book = {
@@ -124,3 +125,53 @@ console.log(((80/2)-4)/3*2);
 		return catCheck.name === 'Garphield' || cat.like === 'milk';
 	}
 	console.log(isACat(catCheck));
+// 8. Массивы
+// 8.1
+	let array = [7,8,9,10,11,12,13];
+// 8.2
+	let summ = function(array) {
+		let out = 0;
+		for (let i = 0; i<array.length; i++) {
+			out += array[i];
+		}
+		return out;
+	}
+	console.log(summ(array));
+// 8.3
+console.log(array);
+	let evens = function(array) {
+		let even = [];
+		for(let i = 0; i<array.length; i++) {
+			if(array[i] % 2 == 0) {
+				even.push(array[i]);
+			}
+		}
+		console.log(even);
+	}	
+	evens(array);
+// 8.4
+let mass1 = [1,5,9],
+		mass2 = [7,5,3];
+	let combinations = function(mass1, mass2) {
+		let out = [];
+
+		for (let i = 0; i < mass1.length; i++) {
+			for (let k = 0; k < mass2.length; k++) {
+				out.push([
+					mass1[i],
+					mass2[k]
+				]);
+			}
+		}
+		console.log(out);
+		return out;
+	}
+	combinations(mass1, mass2);
+// 9. Строки продолжение
+// 9.1
+	console.log('hello'.concat(' ','coding', ' ', 'in', ' ', 'javscript'));
+// 9.2
+	console.log('Coding in javascript'.substr(5, 8));
+// 9.3
+// Не понял что за задание 6, пришлось зачекировать у других.
+	console.log('Coding in javascript'.substring(5, 13));
