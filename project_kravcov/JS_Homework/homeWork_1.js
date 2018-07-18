@@ -108,3 +108,19 @@ console.log(((80/2)-4)/3*2);
 	return result;
  }
  	console.log(digitSumm(1947));
+// 7. Объекты
+// 7.1
+  let book = {
+	 name: 'Программирование на Javascript',
+	 type: 'book',
+	}
+	console.log(book.name + '  ' + book.type);
+// 7.2
+	let catCheck = {
+			name: 'Garphield',
+			like: 'milk',
+	}
+	let isACat = function(catCheck) {
+		return catCheck.name === 'Garphield' || cat.like === 'milk';
+	}
+	console.log(isACat(catCheck));
