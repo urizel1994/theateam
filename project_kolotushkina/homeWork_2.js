@@ -55,11 +55,11 @@ console.log(newSum());
 //forEach
 function forEach(array, fn) {
     for (let i=0; i<array.length; i++)
-        fn(array[i]);
+        fn(array[i], i, array);
 }
 let array = [1,2,3];
-function fn(arr) {
-    console.log(arr + 2);
+function fn(arr,index, array) {
+    console.log(`${index}: ${arr + 2} in ${array}`);
 }
 array.forEach(fn);
 forEach(array,fn);
@@ -68,14 +68,14 @@ forEach(array,fn);
 function map(array, fn) {
     let result = [];
     for (let i=0; i<array.length; i++)
-        result.push(fn(array[i]));
+        result.push(fn(array[i], i , array));
     return result
 }
-function fn1(arr) {
-    return arr +2;
+function fn1(arr, index, array) {
+    return arr + index + array.length;
 }
 
-array1 = array.map((arr) => arr +2);
+array1 = array.map(fn1);
 array11 = map(array,fn1);
 console.log(array1);
 console.log(array11);
@@ -83,22 +83,35 @@ console.log(array11);
 //reduce
 
 function reduce(array, fn, initial) {
-    let result = [];
-    result.push(initial);
-    for (let i=0; i<array.length; i++)
-        result.push(array[i]);
-    let resultValue = result[0];
-    for (let i=1; i<result.length ; i++){
-        resultValue = fn(resultValue, result[i]);}
-    return resultValue
-}
+    let accumulator, current, result;
+    if (initial) {
+        accumulator = initial;
+        current = 0;
+    } else {
+        accumulator = array[0];
+        current = 1;
+        if (!array.length) {
+            throw new TypeError('Reduce of empty array with no initial value\n')
+        }
+    }
+    for (let i = current; i<array.length; i++){
+        accumulator = fn(accumulator, array[i], i, array)
+    }
+    return accumulator;
 
-console.log(array.reduce(function(a, b) {
+}
+array = [1];
+console.log(array.reduce(function(a, b, index, array) {
     return a + b;
 }));
-console.log(reduce(array, function(a, b) {
-    return a + b;
-}, 2));
+try {
+    console.log(reduce(array, function(a, b) {
+        return a + b;
+    }));
+} catch (e) {
+    console.log(e)
+}
+
 
 
 //obj
@@ -114,11 +127,21 @@ console.log(upperProps({ name: 'Сергей', lastName: 'Петров' }));
 
 //slice
 
-function slice(array, from, to) {
+function slice(array, from = 0, to = array.length) {
     let result = [];
+    if (from < 0) {
+        from = array.length + from ;
+    }
+    if (to < 0) {
+        to = array.length + to ;
+    }
+    if (to > array.length) {
+        to = array.length
+    }
     for (let i=from; i<to; i++)
         result.push(array[i]);
     return result
 }
-console.log(array.slice(1,2));
-console.log(slice(array,1,2));
+array = [1,2,3,4,5];
+console.log(array.slice(-3,-1));
+console.log(slice(array,-3,-1));
