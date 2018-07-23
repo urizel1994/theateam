@@ -60,11 +60,9 @@ var menu = {
 function upperPops(obj) {
 	var mass = [];
 	for (var key in obj) {
-		mass.push(key);
+		mass.push(key.toUpperCase());
 	}
-	for (var i = 0; i < mass.length; i++) {
-		console.log(mass[i].toUpperCase());
-	}
+	return mass;
 }
 console.log(upperPops(menu));
 
