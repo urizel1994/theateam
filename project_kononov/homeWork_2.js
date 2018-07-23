@@ -7,8 +7,7 @@ function a() {
 }
 //1.2
 function returnArgument(a) {
-	var r = a;
-	return r;
+	return a;
 }
 console.log(returnArgument('hey'));
 
@@ -43,27 +42,27 @@ function sumWithDefaults_ver2_0(a, b, c, ...rest) {
 console.log(sumWithDefaults_ver2_0(1, 2, 3));
 
 //Задача 3
-function inner(a) {
-	return a;
+function inner() {
+	console.log("Hello");
 }
 
-function returnFnResult(b) {
-	return b;
+function returnFnResult(fn) {
+	return fn;
 }
-console.log(returnFnResult(inner("hey")));
+console.log(returnFnResult(inner()));
 
 //Задача 4
 function returnCounter(a) {
 	var num = a;
 
-	function F(num) {
-		var sum = num + 1;
+	function F(a) {
+		var sum = a + 1;
 		return sum;
 	}
-	return F(num);
+	return F(a);
 }
-var f = returnCounter(f);
-console.log(f);
+var f = returnCounter(10);
+f = returnCounter(f);
 
 //Задача 5
 function returnArgumentsArray(...rest) {
@@ -73,11 +72,13 @@ console.log(returnArgumentsArray(1, 2, 3, 4, 5));
 
 
 //Задача 6
-function sum(a, b) {
-	return a + b;
+function returnArgumentsArray(...rest) {
+	return rest;
 }
 
-function bindFunction(a, x, z) {
-	return  a(x, z);
+function bindFunction(fn) {
+	return fn;
+	
 }
-console.log(bindFunction(sum, 2, 3));
+
+console.log(bindFunction(returnArgumentsArray(1,2,3,4,5)));
