@@ -71,6 +71,11 @@ var ar = [1, 2, 3, 4, 5];
 
 function slice(array, from, to) {
 	var i = from
+	if (from > to){
+		for(; i > to; i --){
+			console.log(array[i]);
+		}
+	}
 	if (from == undefined && to == undefined) {
 		for (i = 0; i < array.length; i++) {
 			console.log(array[i]);
