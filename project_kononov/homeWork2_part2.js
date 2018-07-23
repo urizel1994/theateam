@@ -3,45 +3,52 @@ function forEach(array) {
 	for (var i = 0; i < array.length; i++) {
 		console.log("Элемент: " + array[i] + "; Под индексом:" + i + "; Массива: " + array);
 	}
+	return array;
 }
 var mas = [1, 2, 3];
+forEach(mas);
 
 //Задача 2
-function map(array) {
+function map(array, fn) {
 	var newar = []
 	for (var i = 0; i < array.length; i++) {
 		newar.push(array[i]);
 	}
-	return newar;
+	if (fn !== undefined){
+		newar.push(10)
+		return fn(newar);
+	}
+	else{
+		newar.push(10);
+		return newar;
+	}
+	
 }
-var oldar = [2, 3, 4];
-console.log(map(oldar));
+function root(array){
+	array.push(22);
+	return array;
+	
+}
+var oldar = [16, 4, 9];
+console.log(map(oldar, root));
 
 //Задача 3
-function reduce(array, initial) {
-	var item = 0;
-	var sum = 0;
-	for (var j = 0; j < array.length; j++) {
-		sum += array[j];
+function reduce(array, initial, sum) {
+	if (sum == undefined) {
+		sum = 0;
 	}
-	if (sum < initial || array[array.length - 1] < initial) {
-		console.log("Ошибка: введённое стартовое число некорректно")
-	} else {
-		for (var i = 0; i < array.length; i++) {
+	for (var i = 0; i < array.length; i++) {
+		if (initial !== undefined) {
 			while (array[i] < initial) {
 				array.shift(array[i]);
 			}
-			item = item + array[i];
-
 		}
-
+		sum += array[i];
 	}
-
-
-	return item;
+	return sum;
 }
-var ar = [1, 2, 3, 4, 5]
-console.log(reduce(ar, 5));
+var arr = [1, 2, 3, 4, 5];
+console.log(reduce(arr, 4));
 
 //Задача 4
 var menu = {
@@ -83,4 +90,4 @@ function slice(array, from, to) {
 		console.log(array[i]);
 	}
 }
-console.log(slice(ar, 1, 3));
+console.log(slice(ar, 3, 1));
