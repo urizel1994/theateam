@@ -1,56 +1,57 @@
 // 1
 function fn(array) {
-    for(i = 0; i < array.length; i = i + 1) {
+
+    for (i = 0; i < array.length; i = i + 1) {
         console.log(`${i}: ${array[i]}, массив: [${array}]`);
     }
+
 }
 
 function forEach(array, fn) {
+
     return fn(array); 
 
 }
 
+
 // 2
-function fn(array) {
-
-    var newArray = [];
+function map(array, fn, thisArg) {
     
-    for(i = 0; i < array.length; i = i + 1) {
-        newArray.push((array[i]).length);
-    }
-    return newArray;
-}
+    var newArray = [];
 
-function map(array, fn) {
-    return fn(array);  
+    for (i = 0; i < array.length; i = i + 1){
+        newArray.push(fn.call(thisArg, array[i], i, array));
+    }
+
+    return newArray;
 
 }
 
 // 3
-function fn(array, initial) {
-    
-    var sum;
-
-    if(initial) {
-        sum = initial;
-
-        for(i = 0; i < array.length; i = i + 1) {
-            sum = sum + (array[i]);
-        } 
-    } else {
-        sum = array[0];
-
-        for(i = 1; i < array.length; i = i + 1) {
-            sum = sum + (array[i]);
-        }
-    }
-    
-    return sum;
-
-}
-
 function reduce(array, fn, initial) {
-    return fn(array, initial);
+    
+    if (initial) {
+
+        previousValue = initial;
+
+        for (i = 0; i < array.length; i = i + 1) {
+            var currentItem = array[i];
+            previousValue = fn.call(null, previousValue, currentItem, index, array);
+        }
+
+    } else {
+
+        previousValue = array[0];
+
+        for (i = 1; i < array.length; i = i + 1) {
+            currentItem = array[i];
+            previousValue = fn.call(null, previousValue, currentItem, index, array);
+        }
+
+    }
+
+    return previousValue;
+
 }
 
 // 4
@@ -59,20 +60,65 @@ function upperProps(obj) {
     var array = [];
     var keys = Object.keys(obj);
 
-    for (i = 0; i < keys.length; i = i + 1){
-        array.push(JSON.stringify(keys[i]).toUpperCase());
+    for (var key of keys) {
+        array.push(key.toUpperCase());
     }
 
     return array;
 }
+
 
 // 5
 function slice(array, from, to) {
 
     var newArray = [];
 
-    for(i = from; i < array.length - (array.length - (to)); i = i + 1){
-        newArray.push(array[i]);
+    if (from >= 0 && to > 0) {
+
+        for (i = from; i < array.length - (array.length - (to)); i = i + 1) {
+            newArray.push(array[i]);
+        }
+
+    } else if (from < 0 && to > 0) {
+
+        for (i = (array.length - (-from)); i <  array.length - (array.length - (to)); i = i + 1) {
+            newArray.push(array[i]);
+        }
+
+    } else if (from < 0) {
+
+        for (i = (array.length - (-from)); i < array.length; i = i + 1) {
+            newArray.push(array[i]);
+        }
+
+    } else if (from > array.length) {
+
+        return newArray;
+
+    } else if (!from) {
+
+        for (i = 0;  i < array.length - (array.length - (to)); i = i + 1) {
+            newArray.push(array[i]);
+        }
+    
+    } else if (to < 0) {
+
+        for (i = from; i < array.length - to; i = i + 1) {
+            newArray.push(array[i]);
+        } 
+
+    } else if ((from >= 0 && !to) || to > array.length) {
+
+        for (i = from; i < array.length; i = i + 1) {
+            newArray.push(array[i]);
+        }
+
+    } else if (!from && !to) {
+
+        for (i = 0; i < array.length; i = i + 1) {
+            newArray.push(array[i]);
+        }
+
     }
 
     return newArray;

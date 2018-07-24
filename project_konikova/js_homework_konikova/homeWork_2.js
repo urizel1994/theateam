@@ -6,22 +6,21 @@ function returnFirstArgument(anyParameter) {
 // 2
 function sumWithDefaults(a, b) {
 
-    if (b === undefined) {
-        b = 100;
-    }
+    b = b || 100;
 
     return a + b;
 
 }
 
 // 3
-function returnFnResult(fn) {
-    function fn(name) {
-        return `Привет, ${name}!`
-    }
-
-    return fn('Антон');
+function fn(name) {
+    return `Привет, ${name}!`
 }
+
+function returnFnResult(fn) {
+    return fn;
+}
+returnFnResult(fn('Антон'));
 
 // 4
 
@@ -37,6 +36,7 @@ function returnCounter(number) {
 
 // 5
 function returnArgumentsArray() {  
+
     var array = [];
     
     for (var i = 0; i < arguments.length; i = i + 1){
@@ -47,10 +47,21 @@ function returnArgumentsArray() {
 }
 
 // 6
-function bindFunction(sum, a, b) {
-    function sum() {
-        return a + b;
-    }
-   
-    return sum();
+function fn(...subArgs) {
+
+    var sum = 0;
+
+    for (var i = 0; i < subArgs.length; i = i + 1){
+        sum = sum + subArgs[i];
+    }  
+
+    return sum;
+
+}
+
+function bindFunction(fn, ...mainArgs) {
+
+    var argumentsArray = [...mainArgs];
+    return fn.apply(this, argumentsArray);
+  
 }
