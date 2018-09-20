@@ -5,6 +5,7 @@
   - у svg анимируется stroke-dashoffset
   - стили для svg
   ```sh
+    stroke: #C8D4D9;
     fill: none;
     stroke-width: 1.5;
     stroke-dasharray: 30 30;
