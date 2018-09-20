@@ -18,6 +18,6 @@
 ## Домашние задания
   - ДЗ - 1.СSS **(13.09)** - Доступно [ссылка](https://github.com/2UP/theateam/tree/master/homeWork_1)
   - ДЗ - 2.СSS **(17.09)** - Доступно [ссылка](https://github.com/2UP/theateam/tree/master/homeWork_2)
-  - ДЗ - 3.HTML + СSS **(20.09)** - Не доступно (Доступно - ссылка на ветку)
+  - ДЗ - 3.HTML + СSS **(20.09)** - Доступно [ссылка](https://github.com/2UP/theateam/tree/master/homeWork_3)
 
 
