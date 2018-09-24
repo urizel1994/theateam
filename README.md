@@ -19,5 +19,6 @@
   - ДЗ - 1.СSS **(13.09)** - Доступно [ссылка](https://github.com/2UP/theateam/tree/master/homeWork_1)
   - ДЗ - 2.СSS **(17.09)** - Доступно [ссылка](https://github.com/2UP/theateam/tree/master/homeWork_2)
   - ДЗ - 3.HTML + СSS **(20.09)** - Доступно [ссылка](https://github.com/2UP/theateam/tree/master/homeWork_3)
+  - ДЗ - 3.HTML + СSS **(24.09)** - Доступно [ссылка](https://github.com/2UP/theateam/tree/master/homeWork_4)
 
 
