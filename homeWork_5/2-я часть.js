@@ -1,11 +1,11 @@
-Объекты/Массивы 
-http://learn.javascript.ru/object
-http://learn.javascript.ru/object-for-in
-http://learn.javascript.ru/object-reference
-http://learn.javascript.ru/array
-http://learn.javascript.ru/array-methods
-http://learn.javascript.ru/array-iteration
-http://learn.javascript.ru/arguments-pseudoarray
+// Объекты/Массивы 
+// http://learn.javascript.ru/object
+// http://learn.javascript.ru/object-for-in
+// http://learn.javascript.ru/object-reference
+// http://learn.javascript.ru/array
+// http://learn.javascript.ru/array-methods
+// http://learn.javascript.ru/array-iteration
+// http://learn.javascript.ru/arguments-pseudoarray
 
 /* ДЗ 2 - работа с массивами и объеектами */
 

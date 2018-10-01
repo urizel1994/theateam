@@ -1,7 +1,7 @@
-http://learn.javascript.ru/function-declaration-expression
-http://learn.javascript.ru/named-function-expression
-http://learn.javascript.ru/recursion
-http://learn.javascript.ru/function-basics
+// http://learn.javascript.ru/function-declaration-expression
+// http://learn.javascript.ru/named-function-expression
+// http://learn.javascript.ru/recursion
+// http://learn.javascript.ru/function-basics
 
 
 
