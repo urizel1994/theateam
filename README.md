@@ -22,5 +22,6 @@
   - ДЗ - 4.HTML + СSS **(24.09)** - Доступно [ссылка](https://github.com/2UP/theateam/tree/master/homeWork_4)
   - ДЗ - 5.JS **(1.10)** - Доступно [ссылка](https://github.com/2UP/theateam/tree/master/homeWork_5)
   - ДЗ - 6.JS **(4.10)** - Доступно [ссылка](https://github.com/2UP/theateam/tree/master/homeWork_6)
+  - ДЗ - 7.JS **(8.10)** - Доступно [ссылка](https://github.com/2UP/theateam/tree/master/homeWork_7)
 
 
